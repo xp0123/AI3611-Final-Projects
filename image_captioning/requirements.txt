@@ -1,0 +1,11 @@
+numpy
+pandas
+nltk
+torch
+torchvision
+PyYAML
+fire
+Pillow
+loguru
+tqdm
+pycocoevalcap

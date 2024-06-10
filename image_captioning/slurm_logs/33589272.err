@@ -1,0 +1,4 @@
+Traceback (most recent call last):
+  File "/lustre/home/acct-stu/stu312/fy/Project/image_captioning/evaluate.py", line 23, in <module>
+    captions = open(args.reference_file, "r").read().strip().split("\n")
+FileNotFoundError: [Errno 2] No such file or directory: '/lustre/home/acct-stu/stu282/Data/image_captioning/data/flickr8k/caption.txt'

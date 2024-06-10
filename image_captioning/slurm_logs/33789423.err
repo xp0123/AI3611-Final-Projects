@@ -1,0 +1,8 @@
+PTBTokenizer tokenized 64178 tokens at 396649.03 tokens per second.
+PTBTokenizer tokenized 11261 tokens at 125941.53 tokens per second.
+Traceback (most recent call last):
+  File "/lustre/home/acct-stu/stu312/fy/Project/image_captioning/evaluate.py", line 64, in <module>
+    print_pred(f"Bleu-{n+1}", score[n], scores, key_to_refs, key_to_pred)
+  File "/lustre/home/acct-stu/stu312/fy/Project/image_captioning/evaluate.py", line 17, in print_pred
+    print(f"------- best-{best_score:.3f} -------", file=writer)
+NameError: name 'best_score' is not defined

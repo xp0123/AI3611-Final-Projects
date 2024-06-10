@@ -1,0 +1,8 @@
+PTBTokenizer tokenized 64178 tokens at 399490.77 tokens per second.
+PTBTokenizer tokenized 11261 tokens at 127235.18 tokens per second.
+Traceback (most recent call last):
+  File "/lustre/home/acct-stu/stu312/fy/Project/image_captioning/evaluate.py", line 70, in <module>
+    print_pred(method, score, scores, key_to_refs, key_to_pred)
+  File "/lustre/home/acct-stu/stu312/fy/Project/image_captioning/evaluate.py", line 15, in print_pred
+    best = max(scores[n])
+TypeError: 'numpy.float64' object is not iterable

@@ -1,0 +1,7 @@
+
+CondaValueError: prefix already exists: /lustre/home/acct-stu/stu282/Tools/miniconda3/envs/py3.10.11
+
+
+CondaError: Run 'conda init' before 'conda activate'
+
+/tmp/slurmd/job33581963/slurm_script: line 29: python: command not found

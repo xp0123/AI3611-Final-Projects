@@ -1,0 +1,49 @@
+Traceback (most recent call last):
+  File "/lustre/home/acct-stu/stu312/fy/Project/image_captioning/main.py", line 375, in <module>
+    fire.Fire(Runner)
+  File "/lustre/home/acct-stu/stu312/.conda/envs/pynew/lib/python3.10/site-packages/fire/core.py", line 143, in Fire
+    component_trace = _Fire(component, args, parsed_flag_args, context, name)
+  File "/lustre/home/acct-stu/stu312/.conda/envs/pynew/lib/python3.10/site-packages/fire/core.py", line 477, in _Fire
+    component, remaining_args = _CallAndUpdateTrace(
+  File "/lustre/home/acct-stu/stu312/.conda/envs/pynew/lib/python3.10/site-packages/fire/core.py", line 693, in _CallAndUpdateTrace
+    component = fn(*varargs, **kwargs)
+  File "/lustre/home/acct-stu/stu312/fy/Project/image_captioning/main.py", line 292, in evaluate
+    test_set = Flickr8kDataset(dataset_base_path=args['dataset_base_path'],
+  File "/lustre/home/acct-stu/stu312/fy/Project/image_captioning/datasets/flickr8k.py", line 64, in __init__
+    self.db = self.get_db()
+  File "/lustre/home/acct-stu/stu312/fy/Project/image_captioning/datasets/flickr8k.py", line 122, in get_db
+    toks = nltk.word_tokenize(caption.lower())
+  File "/lustre/home/acct-stu/stu312/.conda/envs/pynew/lib/python3.10/site-packages/nltk/tokenize/__init__.py", line 129, in word_tokenize
+    sentences = [text] if preserve_line else sent_tokenize(text, language)
+  File "/lustre/home/acct-stu/stu312/.conda/envs/pynew/lib/python3.10/site-packages/nltk/tokenize/__init__.py", line 106, in sent_tokenize
+    tokenizer = load(f"tokenizers/punkt/{language}.pickle")
+  File "/lustre/home/acct-stu/stu312/.conda/envs/pynew/lib/python3.10/site-packages/nltk/data.py", line 750, in load
+    opened_resource = _open(resource_url)
+  File "/lustre/home/acct-stu/stu312/.conda/envs/pynew/lib/python3.10/site-packages/nltk/data.py", line 876, in _open
+    return find(path_, path + [""]).open()
+  File "/lustre/home/acct-stu/stu312/.conda/envs/pynew/lib/python3.10/site-packages/nltk/data.py", line 583, in find
+    raise LookupError(resource_not_found)
+LookupError: 
+**********************************************************************
+  Resource [93mpunkt[0m not found.
+  Please use the NLTK Downloader to obtain the resource:
+
+  [31m>>> import nltk
+  >>> nltk.download('punkt')
+  [0m
+  For more information see: https://www.nltk.org/data.html
+
+  Attempted to load [93mtokenizers/punkt/PY3/english.pickle[0m
+
+  Searched in:
+    - '/lustre/home/acct-stu/stu312/nltk_data'
+    - '/lustre/home/acct-stu/stu312/.conda/envs/pynew/nltk_data'
+    - '/lustre/home/acct-stu/stu312/.conda/envs/pynew/share/nltk_data'
+    - '/lustre/home/acct-stu/stu312/.conda/envs/pynew/lib/nltk_data'
+    - '/usr/share/nltk_data'
+    - '/usr/local/share/nltk_data'
+    - '/usr/lib/nltk_data'
+    - '/usr/local/lib/nltk_data'
+    - ''
+**********************************************************************
+

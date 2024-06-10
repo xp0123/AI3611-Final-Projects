@@ -1,0 +1,463 @@
+no change     /lustre/home/acct-stu/stu282/Tools/miniconda3/condabin/conda
+no change     /lustre/home/acct-stu/stu282/Tools/miniconda3/bin/conda
+no change     /lustre/home/acct-stu/stu282/Tools/miniconda3/bin/conda-env
+no change     /lustre/home/acct-stu/stu282/Tools/miniconda3/bin/activate
+no change     /lustre/home/acct-stu/stu282/Tools/miniconda3/bin/deactivate
+no change     /lustre/home/acct-stu/stu282/Tools/miniconda3/etc/profile.d/conda.sh
+no change     /lustre/home/acct-stu/stu282/Tools/miniconda3/etc/fish/conf.d/conda.fish
+no change     /lustre/home/acct-stu/stu282/Tools/miniconda3/shell/condabin/Conda.psm1
+no change     /lustre/home/acct-stu/stu282/Tools/miniconda3/shell/condabin/conda-hook.ps1
+no change     /lustre/home/acct-stu/stu282/Tools/miniconda3/lib/python3.12/site-packages/xontrib/conda.xsh
+no change     /lustre/home/acct-stu/stu282/Tools/miniconda3/etc/profile.d/conda.csh
+no change     /lustre/home/acct-stu/stu312/.bashrc
+No action taken.
+Channels:
+ - conda-forge
+ - pytorch
+ - nvidia
+ - defaults
+Platform: linux-64
+Collecting package metadata (repodata.json): ...working... done
+Solving environment: ...working... done
+
+Downloading and Extracting Packages: ...working... done
+Preparing transaction: ...working... done
+Verifying transaction: ...working... done
+Executing transaction: ...working... done
+Installing pip dependencies: ...working... Ran pip subprocess with arguments:
+['/lustre/home/acct-stu/stu312/.conda/envs/pynew/bin/python', '-m', 'pip', 'install', '-U', '-r', '/lustre/home/acct-stu/stu312/fy/Project/condaenv.lt647cpp.requirements.txt', '--exists-action=b']
+Pip subprocess output:
+Collecting absl-py==2.1.0 (from -r /lustre/home/acct-stu/stu312/fy/Project/condaenv.lt647cpp.requirements.txt (line 1))
+  Downloading absl_py-2.1.0-py3-none-any.whl.metadata (2.3 kB)
+Collecting addict==2.4.0 (from -r /lustre/home/acct-stu/stu312/fy/Project/condaenv.lt647cpp.requirements.txt (line 2))
+  Downloading addict-2.4.0-py3-none-any.whl.metadata (1.0 kB)
+Collecting asttokens==2.4.1 (from -r /lustre/home/acct-stu/stu312/fy/Project/condaenv.lt647cpp.requirements.txt (line 3))
+  Downloading asttokens-2.4.1-py2.py3-none-any.whl.metadata (5.2 kB)
+Collecting astunparse==1.6.3 (from -r /lustre/home/acct-stu/stu312/fy/Project/condaenv.lt647cpp.requirements.txt (line 4))
+  Downloading astunparse-1.6.3-py2.py3-none-any.whl.metadata (4.4 kB)
+Collecting audioread==3.0.1 (from -r /lustre/home/acct-stu/stu312/fy/Project/condaenv.lt647cpp.requirements.txt (line 5))
+  Downloading audioread-3.0.1-py3-none-any.whl.metadata (8.4 kB)
+Collecting basicsr==1.4.2 (from -r /lustre/home/acct-stu/stu312/fy/Project/condaenv.lt647cpp.requirements.txt (line 6))
+  Downloading basicsr-1.4.2.tar.gz (172 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 172.5/172.5 kB 1.1 MB/s eta 0:00:00
+  Preparing metadata (setup.py): started
+  Preparing metadata (setup.py): finished with status 'done'
+Collecting cffi==1.16.0 (from -r /lustre/home/acct-stu/stu312/fy/Project/condaenv.lt647cpp.requirements.txt (line 7))
+  Downloading cffi-1.16.0-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (1.5 kB)
+Requirement already satisfied: cycler==0.12.1 in /lustre/home/acct-stu/stu312/.conda/envs/pynew/lib/python3.10/site-packages (from -r /lustre/home/acct-stu/stu312/fy/Project/condaenv.lt647cpp.requirements.txt (line 8)) (0.12.1)
+Collecting dcase-util==0.2.20 (from -r /lustre/home/acct-stu/stu312/fy/Project/condaenv.lt647cpp.requirements.txt (line 9))
+  Downloading dcase_util-0.2.20.tar.gz (2.1 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.1/2.1 MB 9.5 MB/s eta 0:00:00
+  Preparing metadata (setup.py): started
+  Preparing metadata (setup.py): finished with status 'done'
+Collecting decorator==4.4.2 (from -r /lustre/home/acct-stu/stu312/fy/Project/condaenv.lt647cpp.requirements.txt (line 10))
+  Downloading decorator-4.4.2-py2.py3-none-any.whl.metadata (4.2 kB)
+Collecting exceptiongroup==1.2.0 (from -r /lustre/home/acct-stu/stu312/fy/Project/condaenv.lt647cpp.requirements.txt (line 11))
+  Downloading exceptiongroup-1.2.0-py3-none-any.whl.metadata (6.6 kB)
+Collecting executing==2.0.1 (from -r /lustre/home/acct-stu/stu312/fy/Project/condaenv.lt647cpp.requirements.txt (line 12))
+  Downloading executing-2.0.1-py2.py3-none-any.whl.metadata (9.0 kB)
+Collecting fire==0.6.0 (from -r /lustre/home/acct-stu/stu312/fy/Project/condaenv.lt647cpp.requirements.txt (line 13))
+  Downloading fire-0.6.0.tar.gz (88 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 88.4/88.4 kB 2.8 MB/s eta 0:00:00
+  Preparing metadata (setup.py): started
+  Preparing metadata (setup.py): finished with status 'done'
+Collecting flatbuffers==24.3.25 (from -r /lustre/home/acct-stu/stu312/fy/Project/condaenv.lt647cpp.requirements.txt (line 14))
+  Downloading flatbuffers-24.3.25-py2.py3-none-any.whl.metadata (850 bytes)
+Collecting fonttools==4.50.0 (from -r /lustre/home/acct-stu/stu312/fy/Project/condaenv.lt647cpp.requirements.txt (line 15))
+  Downloading fonttools-4.50.0-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (159 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 159.4/159.4 kB 8.0 MB/s eta 0:00:00
+Collecting fsspec==2024.3.1 (from -r /lustre/home/acct-stu/stu312/fy/Project/condaenv.lt647cpp.requirements.txt (line 16))
+  Downloading fsspec-2024.3.1-py3-none-any.whl.metadata (6.8 kB)
+Collecting future==1.0.0 (from -r /lustre/home/acct-stu/stu312/fy/Project/condaenv.lt647cpp.requirements.txt (line 17))
+  Downloading future-1.0.0-py3-none-any.whl.metadata (4.0 kB)
+Collecting gast==0.5.4 (from -r /lustre/home/acct-stu/stu312/fy/Project/condaenv.lt647cpp.requirements.txt (line 18))
+  Downloading gast-0.5.4-py3-none-any.whl.metadata (1.3 kB)
+Collecting google-pasta==0.2.0 (from -r /lustre/home/acct-stu/stu312/fy/Project/condaenv.lt647cpp.requirements.txt (line 19))
+  Downloading google_pasta-0.2.0-py3-none-any.whl.metadata (814 bytes)
+Collecting grpcio==1.62.1 (from -r /lustre/home/acct-stu/stu312/fy/Project/condaenv.lt647cpp.requirements.txt (line 20))
+  Downloading grpcio-1.62.1-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (4.0 kB)
+Collecting h5py==3.10.0 (from -r /lustre/home/acct-stu/stu312/fy/Project/condaenv.lt647cpp.requirements.txt (line 21))
+  Downloading h5py-3.10.0-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (2.5 kB)
+Collecting imageio==2.34.0 (from -r /lustre/home/acct-stu/stu312/fy/Project/condaenv.lt647cpp.requirements.txt (line 22))
+  Downloading imageio-2.34.0-py3-none-any.whl.metadata (4.9 kB)
+Collecting imageio-ffmpeg==0.4.9 (from -r /lustre/home/acct-stu/stu312/fy/Project/condaenv.lt647cpp.requirements.txt (line 23))
+  Downloading imageio_ffmpeg-0.4.9-py3-none-manylinux2010_x86_64.whl.metadata (1.7 kB)
+Collecting importlib-metadata==7.1.0 (from -r /lustre/home/acct-stu/stu312/fy/Project/condaenv.lt647cpp.requirements.txt (line 24))
+  Downloading importlib_metadata-7.1.0-py3-none-any.whl.metadata (4.7 kB)
+Collecting ipython==8.22.2 (from -r /lustre/home/acct-stu/stu312/fy/Project/condaenv.lt647cpp.requirements.txt (line 25))
+  Downloading ipython-8.22.2-py3-none-any.whl.metadata (4.8 kB)
+Collecting jedi==0.19.1 (from -r /lustre/home/acct-stu/stu312/fy/Project/condaenv.lt647cpp.requirements.txt (line 26))
+  Downloading jedi-0.19.1-py2.py3-none-any.whl.metadata (22 kB)
+Collecting kapre==0.3.7 (from -r /lustre/home/acct-stu/stu312/fy/Project/condaenv.lt647cpp.requirements.txt (line 27))
+  Downloading kapre-0.3.7.tar.gz (26 kB)
+  Installing build dependencies: started
+  Installing build dependencies: finished with status 'done'
+  Getting requirements to build wheel: started
+  Getting requirements to build wheel: finished with status 'done'
+  Preparing metadata (pyproject.toml): started
+  Preparing metadata (pyproject.toml): finished with status 'done'
+Collecting keras==3.1.1 (from -r /lustre/home/acct-stu/stu312/fy/Project/condaenv.lt647cpp.requirements.txt (line 28))
+  Downloading keras-3.1.1-py3-none-any.whl.metadata (5.6 kB)
+Collecting kiwisolver==1.4.5 (from -r /lustre/home/acct-stu/stu312/fy/Project/condaenv.lt647cpp.requirements.txt (line 29))
+  Downloading kiwisolver-1.4.5-cp310-cp310-manylinux_2_12_x86_64.manylinux2010_x86_64.whl.metadata (6.4 kB)
+Collecting lazy-loader==0.3 (from -r /lustre/home/acct-stu/stu312/fy/Project/condaenv.lt647cpp.requirements.txt (line 30))
+  Downloading lazy_loader-0.3-py3-none-any.whl.metadata (4.3 kB)
+Collecting libclang==18.1.1 (from -r /lustre/home/acct-stu/stu312/fy/Project/condaenv.lt647cpp.requirements.txt (line 31))
+  Downloading libclang-18.1.1-py2.py3-none-manylinux2010_x86_64.whl.metadata (5.2 kB)
+Collecting librosa==0.10.1 (from -r /lustre/home/acct-stu/stu312/fy/Project/condaenv.lt647cpp.requirements.txt (line 32))
+  Downloading librosa-0.10.1-py3-none-any.whl.metadata (8.3 kB)
+Collecting llvmlite==0.42.0 (from -r /lustre/home/acct-stu/stu312/fy/Project/condaenv.lt647cpp.requirements.txt (line 33))
+  Downloading llvmlite-0.42.0-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (4.8 kB)
+Collecting lmdb==1.4.1 (from -r /lustre/home/acct-stu/stu312/fy/Project/condaenv.lt647cpp.requirements.txt (line 34))
+  Downloading lmdb-1.4.1-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (1.2 kB)
+Collecting markdown==3.6 (from -r /lustre/home/acct-stu/stu312/fy/Project/condaenv.lt647cpp.requirements.txt (line 35))
+  Downloading Markdown-3.6-py3-none-any.whl.metadata (7.0 kB)
+Collecting markdown-it-py==3.0.0 (from -r /lustre/home/acct-stu/stu312/fy/Project/condaenv.lt647cpp.requirements.txt (line 36))
+  Downloading markdown_it_py-3.0.0-py3-none-any.whl.metadata (6.9 kB)
+Collecting matplotlib==3.8.3 (from -r /lustre/home/acct-stu/stu312/fy/Project/condaenv.lt647cpp.requirements.txt (line 37))
+  Downloading matplotlib-3.8.3-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (5.8 kB)
+Collecting matplotlib-inline==0.1.6 (from -r /lustre/home/acct-stu/stu312/fy/Project/condaenv.lt647cpp.requirements.txt (line 38))
+  Downloading matplotlib_inline-0.1.6-py3-none-any.whl.metadata (2.8 kB)
+Collecting mdurl==0.1.2 (from -r /lustre/home/acct-stu/stu312/fy/Project/condaenv.lt647cpp.requirements.txt (line 39))
+  Downloading mdurl-0.1.2-py3-none-any.whl.metadata (1.6 kB)
+Collecting ml-dtypes==0.3.2 (from -r /lustre/home/acct-stu/stu312/fy/Project/condaenv.lt647cpp.requirements.txt (line 40))
+  Downloading ml_dtypes-0.3.2-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (20 kB)
+Collecting moviepy==1.0.3 (from -r /lustre/home/acct-stu/stu312/fy/Project/condaenv.lt647cpp.requirements.txt (line 41))
+  Downloading moviepy-1.0.3.tar.gz (388 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 388.3/388.3 kB 15.3 MB/s eta 0:00:00
+  Preparing metadata (setup.py): started
+  Preparing metadata (setup.py): finished with status 'done'
+Collecting msgpack==1.0.8 (from -r /lustre/home/acct-stu/stu312/fy/Project/condaenv.lt647cpp.requirements.txt (line 42))
+  Downloading msgpack-1.0.8-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (9.1 kB)
+Collecting namex==0.0.7 (from -r /lustre/home/acct-stu/stu312/fy/Project/condaenv.lt647cpp.requirements.txt (line 43))
+  Downloading namex-0.0.7-py3-none-any.whl.metadata (246 bytes)
+Collecting numba==0.59.1 (from -r /lustre/home/acct-stu/stu312/fy/Project/condaenv.lt647cpp.requirements.txt (line 44))
+  Downloading numba-0.59.1-cp310-cp310-manylinux2014_x86_64.manylinux_2_17_x86_64.whl.metadata (2.7 kB)
+Collecting opencv-python==4.9.0.80 (from -r /lustre/home/acct-stu/stu312/fy/Project/condaenv.lt647cpp.requirements.txt (line 45))
+  Downloading opencv_python-4.9.0.80-cp37-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (20 kB)
+Collecting opt-einsum==3.3.0 (from -r /lustre/home/acct-stu/stu312/fy/Project/condaenv.lt647cpp.requirements.txt (line 46))
+  Downloading opt_einsum-3.3.0-py3-none-any.whl.metadata (6.5 kB)
+Collecting optree==0.11.0 (from -r /lustre/home/acct-stu/stu312/fy/Project/condaenv.lt647cpp.requirements.txt (line 47))
+  Downloading optree-0.11.0-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (45 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 45.4/45.4 kB 1.5 MB/s eta 0:00:00
+Requirement already satisfied: packaging==24.0 in /lustre/home/acct-stu/stu312/.conda/envs/pynew/lib/python3.10/site-packages (from -r /lustre/home/acct-stu/stu312/fy/Project/condaenv.lt647cpp.requirements.txt (line 48)) (24.0)
+Collecting parso==0.8.3 (from -r /lustre/home/acct-stu/stu312/fy/Project/condaenv.lt647cpp.requirements.txt (line 49))
+  Downloading parso-0.8.3-py2.py3-none-any.whl.metadata (7.5 kB)
+Collecting pexpect==4.9.0 (from -r /lustre/home/acct-stu/stu312/fy/Project/condaenv.lt647cpp.requirements.txt (line 50))
+  Downloading pexpect-4.9.0-py2.py3-none-any.whl.metadata (2.5 kB)
+Collecting platformdirs==4.2.0 (from -r /lustre/home/acct-stu/stu312/fy/Project/condaenv.lt647cpp.requirements.txt (line 51))
+  Downloading platformdirs-4.2.0-py3-none-any.whl.metadata (11 kB)
+Collecting pooch==1.8.1 (from -r /lustre/home/acct-stu/stu312/fy/Project/condaenv.lt647cpp.requirements.txt (line 52))
+  Downloading pooch-1.8.1-py3-none-any.whl.metadata (9.5 kB)
+Collecting proglog==0.1.10 (from -r /lustre/home/acct-stu/stu312/fy/Project/condaenv.lt647cpp.requirements.txt (line 53))
+  Downloading proglog-0.1.10-py3-none-any.whl.metadata (639 bytes)
+Collecting prompt-toolkit==3.0.43 (from -r /lustre/home/acct-stu/stu312/fy/Project/condaenv.lt647cpp.requirements.txt (line 54))
+  Downloading prompt_toolkit-3.0.43-py3-none-any.whl.metadata (6.5 kB)
+Collecting protobuf==4.25.3 (from -r /lustre/home/acct-stu/stu312/fy/Project/condaenv.lt647cpp.requirements.txt (line 55))
+  Downloading protobuf-4.25.3-cp37-abi3-manylinux2014_x86_64.whl.metadata (541 bytes)
+Collecting ptyprocess==0.7.0 (from -r /lustre/home/acct-stu/stu312/fy/Project/condaenv.lt647cpp.requirements.txt (line 56))
+  Downloading ptyprocess-0.7.0-py2.py3-none-any.whl.metadata (1.3 kB)
+Collecting pure-eval==0.2.2 (from -r /lustre/home/acct-stu/stu312/fy/Project/condaenv.lt647cpp.requirements.txt (line 57))
+  Downloading pure_eval-0.2.2-py3-none-any.whl.metadata (6.2 kB)
+Collecting pycocoevalcap==1.2 (from -r /lustre/home/acct-stu/stu312/fy/Project/condaenv.lt647cpp.requirements.txt (line 58))
+  Downloading pycocoevalcap-1.2-py3-none-any.whl.metadata (3.2 kB)
+Collecting pycocotools==2.0.7 (from -r /lustre/home/acct-stu/stu312/fy/Project/condaenv.lt647cpp.requirements.txt (line 59))
+  Downloading pycocotools-2.0.7-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (1.1 kB)
+Collecting pycparser==2.21 (from -r /lustre/home/acct-stu/stu312/fy/Project/condaenv.lt647cpp.requirements.txt (line 60))
+  Downloading pycparser-2.21-py2.py3-none-any.whl.metadata (1.1 kB)
+Collecting pydot-ng==2.0.0 (from -r /lustre/home/acct-stu/stu312/fy/Project/condaenv.lt647cpp.requirements.txt (line 61))
+  Downloading pydot_ng-2.0.0-py2.py3-none-any.whl.metadata (2.0 kB)
+Collecting pygments==2.17.2 (from -r /lustre/home/acct-stu/stu312/fy/Project/condaenv.lt647cpp.requirements.txt (line 62))
+  Downloading pygments-2.17.2-py3-none-any.whl.metadata (2.6 kB)
+Collecting pyparsing==3.1.2 (from -r /lustre/home/acct-stu/stu312/fy/Project/condaenv.lt647cpp.requirements.txt (line 63))
+  Downloading pyparsing-3.1.2-py3-none-any.whl.metadata (5.1 kB)
+Collecting pypeln==0.4.9 (from -r /lustre/home/acct-stu/stu312/fy/Project/condaenv.lt647cpp.requirements.txt (line 64))
+  Downloading pypeln-0.4.9-py3-none-any.whl.metadata (7.7 kB)
+Collecting python-magic==0.4.27 (from -r /lustre/home/acct-stu/stu312/fy/Project/condaenv.lt647cpp.requirements.txt (line 65))
+  Downloading python_magic-0.4.27-py2.py3-none-any.whl.metadata (5.8 kB)
+Collecting resampy==0.2.2 (from -r /lustre/home/acct-stu/stu312/fy/Project/condaenv.lt647cpp.requirements.txt (line 66))
+  Downloading resampy-0.2.2.tar.gz (323 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 323.4/323.4 kB 8.3 MB/s eta 0:00:00
+  Preparing metadata (setup.py): started
+  Preparing metadata (setup.py): finished with status 'done'
+Collecting rich==13.7.1 (from -r /lustre/home/acct-stu/stu312/fy/Project/condaenv.lt647cpp.requirements.txt (line 67))
+  Downloading rich-13.7.1-py3-none-any.whl.metadata (18 kB)
+Collecting scikit-image==0.22.0 (from -r /lustre/home/acct-stu/stu312/fy/Project/condaenv.lt647cpp.requirements.txt (line 68))
+  Downloading scikit_image-0.22.0-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (13 kB)
+Collecting scikit-learn==1.4.1.post1 (from -r /lustre/home/acct-stu/stu312/fy/Project/condaenv.lt647cpp.requirements.txt (line 69))
+  Downloading scikit_learn-1.4.1.post1-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (11 kB)
+Collecting scikit-multilearn==0.2.0 (from -r /lustre/home/acct-stu/stu312/fy/Project/condaenv.lt647cpp.requirements.txt (line 70))
+  Downloading scikit_multilearn-0.2.0-py3-none-any.whl.metadata (6.0 kB)
+Collecting scipy==1.12.0 (from -r /lustre/home/acct-stu/stu312/fy/Project/condaenv.lt647cpp.requirements.txt (line 71))
+  Downloading scipy-1.12.0-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (60 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 60.4/60.4 kB 2.6 MB/s eta 0:00:00
+Collecting sed-eval==0.2.1 (from -r /lustre/home/acct-stu/stu312/fy/Project/condaenv.lt647cpp.requirements.txt (line 72))
+  Downloading sed_eval-0.2.1.tar.gz (21 kB)
+  Preparing metadata (setup.py): started
+  Preparing metadata (setup.py): finished with status 'done'
+Collecting soundfile==0.12.1 (from -r /lustre/home/acct-stu/stu312/fy/Project/condaenv.lt647cpp.requirements.txt (line 73))
+  Downloading soundfile-0.12.1-py2.py3-none-manylinux_2_17_x86_64.whl.metadata (14 kB)
+Collecting soxr==0.3.7 (from -r /lustre/home/acct-stu/stu312/fy/Project/condaenv.lt647cpp.requirements.txt (line 74))
+  Downloading soxr-0.3.7-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (5.5 kB)
+Collecting stack-data==0.6.3 (from -r /lustre/home/acct-stu/stu312/fy/Project/condaenv.lt647cpp.requirements.txt (line 75))
+  Downloading stack_data-0.6.3-py3-none-any.whl.metadata (18 kB)
+Collecting stopit==1.1.2 (from -r /lustre/home/acct-stu/stu312/fy/Project/condaenv.lt647cpp.requirements.txt (line 76))
+  Downloading stopit-1.1.2.tar.gz (18 kB)
+  Preparing metadata (setup.py): started
+  Preparing metadata (setup.py): finished with status 'done'
+Collecting tb-nightly==2.17.0a20240326 (from -r /lustre/home/acct-stu/stu312/fy/Project/condaenv.lt647cpp.requirements.txt (line 77))
+  Downloading tb_nightly-2.17.0a20240326-py3-none-any.whl.metadata (1.6 kB)
+Collecting tensorboard==2.16.2 (from -r /lustre/home/acct-stu/stu312/fy/Project/condaenv.lt647cpp.requirements.txt (line 78))
+  Downloading tensorboard-2.16.2-py3-none-any.whl.metadata (1.6 kB)
+Collecting tensorboard-data-server==0.7.2 (from -r /lustre/home/acct-stu/stu312/fy/Project/condaenv.lt647cpp.requirements.txt (line 79))
+  Downloading tensorboard_data_server-0.7.2-py3-none-any.whl.metadata (1.1 kB)
+Collecting tensorflow==2.16.1 (from -r /lustre/home/acct-stu/stu312/fy/Project/condaenv.lt647cpp.requirements.txt (line 80))
+  Downloading tensorflow-2.16.1-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (4.3 kB)
+Collecting tensorflow-io-gcs-filesystem==0.36.0 (from -r /lustre/home/acct-stu/stu312/fy/Project/condaenv.lt647cpp.requirements.txt (line 81))
+  Downloading tensorflow_io_gcs_filesystem-0.36.0-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (14 kB)
+Collecting termcolor==2.4.0 (from -r /lustre/home/acct-stu/stu312/fy/Project/condaenv.lt647cpp.requirements.txt (line 82))
+  Downloading termcolor-2.4.0-py3-none-any.whl.metadata (6.1 kB)
+Collecting threadpoolctl==3.4.0 (from -r /lustre/home/acct-stu/stu312/fy/Project/condaenv.lt647cpp.requirements.txt (line 83))
+  Downloading threadpoolctl-3.4.0-py3-none-any.whl.metadata (13 kB)
+Collecting tifffile==2024.2.12 (from -r /lustre/home/acct-stu/stu312/fy/Project/condaenv.lt647cpp.requirements.txt (line 84))
+  Downloading tifffile-2024.2.12-py3-none-any.whl.metadata (31 kB)
+Collecting tomli==2.0.1 (from -r /lustre/home/acct-stu/stu312/fy/Project/condaenv.lt647cpp.requirements.txt (line 85))
+  Downloading tomli-2.0.1-py3-none-any.whl.metadata (8.9 kB)
+Collecting traitlets==5.14.2 (from -r /lustre/home/acct-stu/stu312/fy/Project/condaenv.lt647cpp.requirements.txt (line 86))
+  Downloading traitlets-5.14.2-py3-none-any.whl.metadata (10 kB)
+Collecting validators==0.24.0 (from -r /lustre/home/acct-stu/stu312/fy/Project/condaenv.lt647cpp.requirements.txt (line 87))
+  Downloading validators-0.24.0-py3-none-any.whl.metadata (3.6 kB)
+Collecting wcwidth==0.2.13 (from -r /lustre/home/acct-stu/stu312/fy/Project/condaenv.lt647cpp.requirements.txt (line 88))
+  Downloading wcwidth-0.2.13-py2.py3-none-any.whl.metadata (14 kB)
+Collecting werkzeug==3.0.1 (from -r /lustre/home/acct-stu/stu312/fy/Project/condaenv.lt647cpp.requirements.txt (line 89))
+  Downloading werkzeug-3.0.1-py3-none-any.whl.metadata (4.1 kB)
+Collecting wrapt==1.16.0 (from -r /lustre/home/acct-stu/stu312/fy/Project/condaenv.lt647cpp.requirements.txt (line 90))
+  Downloading wrapt-1.16.0-cp310-cp310-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (6.6 kB)
+Collecting yapf==0.40.2 (from -r /lustre/home/acct-stu/stu312/fy/Project/condaenv.lt647cpp.requirements.txt (line 91))
+  Downloading yapf-0.40.2-py3-none-any.whl.metadata (45 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 45.4/45.4 kB 1.9 MB/s eta 0:00:00
+Collecting zipp==3.18.1 (from -r /lustre/home/acct-stu/stu312/fy/Project/condaenv.lt647cpp.requirements.txt (line 92))
+  Downloading zipp-3.18.1-py3-none-any.whl.metadata (3.5 kB)
+Requirement already satisfied: six>=1.12.0 in /lustre/home/acct-stu/stu312/.conda/envs/pynew/lib/python3.10/site-packages (from asttokens==2.4.1->-r /lustre/home/acct-stu/stu312/fy/Project/condaenv.lt647cpp.requirements.txt (line 3)) (1.16.0)
+Requirement already satisfied: wheel<1.0,>=0.23.0 in /lustre/home/acct-stu/stu312/.conda/envs/pynew/lib/python3.10/site-packages (from astunparse==1.6.3->-r /lustre/home/acct-stu/stu312/fy/Project/condaenv.lt647cpp.requirements.txt (line 4)) (0.41.2)
+Requirement already satisfied: numpy>=1.17 in /lustre/home/acct-stu/stu312/.conda/envs/pynew/lib/python3.10/site-packages (from basicsr==1.4.2->-r /lustre/home/acct-stu/stu312/fy/Project/condaenv.lt647cpp.requirements.txt (line 6)) (1.26.4)
+Requirement already satisfied: Pillow in /lustre/home/acct-stu/stu312/.conda/envs/pynew/lib/python3.10/site-packages (from basicsr==1.4.2->-r /lustre/home/acct-stu/stu312/fy/Project/condaenv.lt647cpp.requirements.txt (line 6)) (10.2.0)
+Requirement already satisfied: pyyaml in /lustre/home/acct-stu/stu312/.conda/envs/pynew/lib/python3.10/site-packages (from basicsr==1.4.2->-r /lustre/home/acct-stu/stu312/fy/Project/condaenv.lt647cpp.requirements.txt (line 6)) (6.0.1)
+Requirement already satisfied: requests in /lustre/home/acct-stu/stu312/.conda/envs/pynew/lib/python3.10/site-packages (from basicsr==1.4.2->-r /lustre/home/acct-stu/stu312/fy/Project/condaenv.lt647cpp.requirements.txt (line 6)) (2.31.0)
+Requirement already satisfied: torch>=1.7 in /lustre/home/acct-stu/stu312/.conda/envs/pynew/lib/python3.10/site-packages (from basicsr==1.4.2->-r /lustre/home/acct-stu/stu312/fy/Project/condaenv.lt647cpp.requirements.txt (line 6)) (2.2.1)
+Requirement already satisfied: torchvision in /lustre/home/acct-stu/stu312/.conda/envs/pynew/lib/python3.10/site-packages (from basicsr==1.4.2->-r /lustre/home/acct-stu/stu312/fy/Project/condaenv.lt647cpp.requirements.txt (line 6)) (0.17.1)
+Requirement already satisfied: tqdm in /lustre/home/acct-stu/stu312/.conda/envs/pynew/lib/python3.10/site-packages (from basicsr==1.4.2->-r /lustre/home/acct-stu/stu312/fy/Project/condaenv.lt647cpp.requirements.txt (line 6)) (4.65.0)
+Requirement already satisfied: setuptools in /lustre/home/acct-stu/stu312/.conda/envs/pynew/lib/python3.10/site-packages (from imageio-ffmpeg==0.4.9->-r /lustre/home/acct-stu/stu312/fy/Project/condaenv.lt647cpp.requirements.txt (line 23)) (68.2.2)
+Requirement already satisfied: joblib>=0.14 in /lustre/home/acct-stu/stu312/.conda/envs/pynew/lib/python3.10/site-packages (from librosa==0.10.1->-r /lustre/home/acct-stu/stu312/fy/Project/condaenv.lt647cpp.requirements.txt (line 32)) (1.2.0)
+Requirement already satisfied: typing-extensions>=4.1.1 in /lustre/home/acct-stu/stu312/.conda/envs/pynew/lib/python3.10/site-packages (from librosa==0.10.1->-r /lustre/home/acct-stu/stu312/fy/Project/condaenv.lt647cpp.requirements.txt (line 32)) (4.9.0)
+Requirement already satisfied: contourpy>=1.0.1 in /lustre/home/acct-stu/stu312/.conda/envs/pynew/lib/python3.10/site-packages (from matplotlib==3.8.3->-r /lustre/home/acct-stu/stu312/fy/Project/condaenv.lt647cpp.requirements.txt (line 37)) (1.2.0)
+Requirement already satisfied: python-dateutil>=2.7 in /lustre/home/acct-stu/stu312/.conda/envs/pynew/lib/python3.10/site-packages (from matplotlib==3.8.3->-r /lustre/home/acct-stu/stu312/fy/Project/condaenv.lt647cpp.requirements.txt (line 37)) (2.8.2)
+Requirement already satisfied: networkx>=2.8 in /lustre/home/acct-stu/stu312/.conda/envs/pynew/lib/python3.10/site-packages (from scikit-image==0.22.0->-r /lustre/home/acct-stu/stu312/fy/Project/condaenv.lt647cpp.requirements.txt (line 68)) (3.1)
+Requirement already satisfied: MarkupSafe>=2.1.1 in /lustre/home/acct-stu/stu312/.conda/envs/pynew/lib/python3.10/site-packages (from werkzeug==3.0.1->-r /lustre/home/acct-stu/stu312/fy/Project/condaenv.lt647cpp.requirements.txt (line 89)) (2.1.3)
+Requirement already satisfied: charset-normalizer<4,>=2 in /lustre/home/acct-stu/stu312/.conda/envs/pynew/lib/python3.10/site-packages (from requests->basicsr==1.4.2->-r /lustre/home/acct-stu/stu312/fy/Project/condaenv.lt647cpp.requirements.txt (line 6)) (2.0.4)
+Requirement already satisfied: idna<4,>=2.5 in /lustre/home/acct-stu/stu312/.conda/envs/pynew/lib/python3.10/site-packages (from requests->basicsr==1.4.2->-r /lustre/home/acct-stu/stu312/fy/Project/condaenv.lt647cpp.requirements.txt (line 6)) (3.4)
+Requirement already satisfied: urllib3<3,>=1.21.1 in /lustre/home/acct-stu/stu312/.conda/envs/pynew/lib/python3.10/site-packages (from requests->basicsr==1.4.2->-r /lustre/home/acct-stu/stu312/fy/Project/condaenv.lt647cpp.requirements.txt (line 6)) (2.1.0)
+Requirement already satisfied: certifi>=2017.4.17 in /lustre/home/acct-stu/stu312/.conda/envs/pynew/lib/python3.10/site-packages (from requests->basicsr==1.4.2->-r /lustre/home/acct-stu/stu312/fy/Project/condaenv.lt647cpp.requirements.txt (line 6)) (2024.2.2)
+Requirement already satisfied: filelock in /lustre/home/acct-stu/stu312/.conda/envs/pynew/lib/python3.10/site-packages (from torch>=1.7->basicsr==1.4.2->-r /lustre/home/acct-stu/stu312/fy/Project/condaenv.lt647cpp.requirements.txt (line 6)) (3.13.1)
+Requirement already satisfied: sympy in /lustre/home/acct-stu/stu312/.conda/envs/pynew/lib/python3.10/site-packages (from torch>=1.7->basicsr==1.4.2->-r /lustre/home/acct-stu/stu312/fy/Project/condaenv.lt647cpp.requirements.txt (line 6)) (1.12)
+Requirement already satisfied: jinja2 in /lustre/home/acct-stu/stu312/.conda/envs/pynew/lib/python3.10/site-packages (from torch>=1.7->basicsr==1.4.2->-r /lustre/home/acct-stu/stu312/fy/Project/condaenv.lt647cpp.requirements.txt (line 6)) (3.1.3)
+Requirement already satisfied: mpmath>=0.19 in /lustre/home/acct-stu/stu312/.conda/envs/pynew/lib/python3.10/site-packages (from sympy->torch>=1.7->basicsr==1.4.2->-r /lustre/home/acct-stu/stu312/fy/Project/condaenv.lt647cpp.requirements.txt (line 6)) (1.3.0)
+Downloading absl_py-2.1.0-py3-none-any.whl (133 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 133.7/133.7 kB 5.2 MB/s eta 0:00:00
+Downloading addict-2.4.0-py3-none-any.whl (3.8 kB)
+Downloading asttokens-2.4.1-py2.py3-none-any.whl (27 kB)
+Downloading astunparse-1.6.3-py2.py3-none-any.whl (12 kB)
+Downloading audioread-3.0.1-py3-none-any.whl (23 kB)
+Downloading cffi-1.16.0-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (443 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 443.9/443.9 kB 15.1 MB/s eta 0:00:00
+Downloading decorator-4.4.2-py2.py3-none-any.whl (9.2 kB)
+Downloading exceptiongroup-1.2.0-py3-none-any.whl (16 kB)
+Downloading executing-2.0.1-py2.py3-none-any.whl (24 kB)
+Downloading flatbuffers-24.3.25-py2.py3-none-any.whl (26 kB)
+Downloading fonttools-4.50.0-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (4.6 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 4.6/4.6 MB 24.3 MB/s eta 0:00:00
+Downloading fsspec-2024.3.1-py3-none-any.whl (171 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 172.0/172.0 kB 6.7 MB/s eta 0:00:00
+Downloading future-1.0.0-py3-none-any.whl (491 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 491.3/491.3 kB 14.8 MB/s eta 0:00:00
+Downloading gast-0.5.4-py3-none-any.whl (19 kB)
+Downloading google_pasta-0.2.0-py3-none-any.whl (57 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 57.5/57.5 kB 2.6 MB/s eta 0:00:00
+Downloading grpcio-1.62.1-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (5.5 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 5.5/5.5 MB 22.7 MB/s eta 0:00:00
+Downloading h5py-3.10.0-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (4.8 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 4.8/4.8 MB 22.8 MB/s eta 0:00:00
+Downloading imageio-2.34.0-py3-none-any.whl (313 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 313.4/313.4 kB 6.0 MB/s eta 0:00:00
+Downloading imageio_ffmpeg-0.4.9-py3-none-manylinux2010_x86_64.whl (26.9 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 26.9/26.9 MB 21.5 MB/s eta 0:00:00
+Downloading importlib_metadata-7.1.0-py3-none-any.whl (24 kB)
+Downloading ipython-8.22.2-py3-none-any.whl (811 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 812.0/812.0 kB 19.0 MB/s eta 0:00:00
+Downloading jedi-0.19.1-py2.py3-none-any.whl (1.6 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.6/1.6 MB 20.4 MB/s eta 0:00:00
+Downloading keras-3.1.1-py3-none-any.whl (1.1 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.1/1.1 MB 20.9 MB/s eta 0:00:00
+Downloading kiwisolver-1.4.5-cp310-cp310-manylinux_2_12_x86_64.manylinux2010_x86_64.whl (1.6 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.6/1.6 MB 20.8 MB/s eta 0:00:00
+Downloading lazy_loader-0.3-py3-none-any.whl (9.1 kB)
+Downloading libclang-18.1.1-py2.py3-none-manylinux2010_x86_64.whl (24.5 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 24.5/24.5 MB 23.7 MB/s eta 0:00:00
+Downloading librosa-0.10.1-py3-none-any.whl (253 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 253.7/253.7 kB 10.6 MB/s eta 0:00:00
+Downloading llvmlite-0.42.0-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (43.8 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 43.8/43.8 MB 17.6 MB/s eta 0:00:00
+Downloading lmdb-1.4.1-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (299 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 299.2/299.2 kB 11.8 MB/s eta 0:00:00
+Downloading Markdown-3.6-py3-none-any.whl (105 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 105.4/105.4 kB 3.7 MB/s eta 0:00:00
+Downloading markdown_it_py-3.0.0-py3-none-any.whl (87 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 87.5/87.5 kB 3.7 MB/s eta 0:00:00
+Downloading matplotlib-3.8.3-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (11.6 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 11.6/11.6 MB 30.9 MB/s eta 0:00:00
+Downloading matplotlib_inline-0.1.6-py3-none-any.whl (9.4 kB)
+Downloading mdurl-0.1.2-py3-none-any.whl (10.0 kB)
+Downloading ml_dtypes-0.3.2-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (2.2 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.2/2.2 MB 27.0 MB/s eta 0:00:00
+Downloading msgpack-1.0.8-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (385 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 385.1/385.1 kB 9.8 MB/s eta 0:00:00
+Downloading namex-0.0.7-py3-none-any.whl (5.8 kB)
+Downloading numba-0.59.1-cp310-cp310-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (3.7 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 3.7/3.7 MB 28.4 MB/s eta 0:00:00
+Downloading opencv_python-4.9.0.80-cp37-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (62.2 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 62.2/62.2 MB 16.8 MB/s eta 0:00:00
+Downloading opt_einsum-3.3.0-py3-none-any.whl (65 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 65.5/65.5 kB 2.3 MB/s eta 0:00:00
+Downloading optree-0.11.0-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (311 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 311.2/311.2 kB 11.8 MB/s eta 0:00:00
+Downloading parso-0.8.3-py2.py3-none-any.whl (100 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100.8/100.8 kB 4.6 MB/s eta 0:00:00
+Downloading pexpect-4.9.0-py2.py3-none-any.whl (63 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 63.8/63.8 kB 3.2 MB/s eta 0:00:00
+Downloading platformdirs-4.2.0-py3-none-any.whl (17 kB)
+Downloading pooch-1.8.1-py3-none-any.whl (62 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 63.0/63.0 kB 1.4 MB/s eta 0:00:00
+Downloading proglog-0.1.10-py3-none-any.whl (6.1 kB)
+Downloading prompt_toolkit-3.0.43-py3-none-any.whl (386 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 386.1/386.1 kB 14.3 MB/s eta 0:00:00
+Downloading protobuf-4.25.3-cp37-abi3-manylinux2014_x86_64.whl (294 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 294.6/294.6 kB 12.8 MB/s eta 0:00:00
+Downloading ptyprocess-0.7.0-py2.py3-none-any.whl (13 kB)
+Downloading pure_eval-0.2.2-py3-none-any.whl (11 kB)
+Downloading pycocoevalcap-1.2-py3-none-any.whl (104.3 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 104.3/104.3 MB 12.0 MB/s eta 0:00:00
+Downloading pycocotools-2.0.7-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (426 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 426.2/426.2 kB 7.6 MB/s eta 0:00:00
+Downloading pycparser-2.21-py2.py3-none-any.whl (118 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 118.7/118.7 kB 5.8 MB/s eta 0:00:00
+Downloading pydot_ng-2.0.0-py2.py3-none-any.whl (20 kB)
+Downloading pygments-2.17.2-py3-none-any.whl (1.2 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.2/1.2 MB 22.8 MB/s eta 0:00:00
+Downloading pyparsing-3.1.2-py3-none-any.whl (103 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 103.2/103.2 kB 2.9 MB/s eta 0:00:00
+Downloading pypeln-0.4.9-py3-none-any.whl (105 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 105.3/105.3 kB 3.3 MB/s eta 0:00:00
+Downloading python_magic-0.4.27-py2.py3-none-any.whl (13 kB)
+Downloading rich-13.7.1-py3-none-any.whl (240 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 240.7/240.7 kB 11.3 MB/s eta 0:00:00
+Downloading scikit_image-0.22.0-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (14.7 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 14.7/14.7 MB 28.1 MB/s eta 0:00:00
+Downloading scikit_learn-1.4.1.post1-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (12.1 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 12.1/12.1 MB 30.0 MB/s eta 0:00:00
+Downloading scikit_multilearn-0.2.0-py3-none-any.whl (89 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 89.4/89.4 kB 2.8 MB/s eta 0:00:00
+Downloading scipy-1.12.0-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (38.4 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 38.4/38.4 MB 20.9 MB/s eta 0:00:00
+Downloading soundfile-0.12.1-py2.py3-none-manylinux_2_17_x86_64.whl (1.3 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.3/1.3 MB 23.9 MB/s eta 0:00:00
+Downloading soxr-0.3.7-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (1.2 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.2/1.2 MB 20.3 MB/s eta 0:00:00
+Downloading stack_data-0.6.3-py3-none-any.whl (24 kB)
+Downloading tb_nightly-2.17.0a20240326-py3-none-any.whl (5.5 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 5.5/5.5 MB 32.3 MB/s eta 0:00:00
+Downloading tensorboard-2.16.2-py3-none-any.whl (5.5 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 5.5/5.5 MB 32.7 MB/s eta 0:00:00
+Downloading tensorboard_data_server-0.7.2-py3-none-any.whl (2.4 kB)
+Downloading tensorflow-2.16.1-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (589.8 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 589.8/589.8 MB 2.8 MB/s eta 0:00:00
+Downloading tensorflow_io_gcs_filesystem-0.36.0-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (5.1 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 5.1/5.1 MB 35.7 MB/s eta 0:00:00
+Downloading termcolor-2.4.0-py3-none-any.whl (7.7 kB)
+Downloading threadpoolctl-3.4.0-py3-none-any.whl (17 kB)
+Downloading tifffile-2024.2.12-py3-none-any.whl (224 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 224.5/224.5 kB 5.6 MB/s eta 0:00:00
+Downloading tomli-2.0.1-py3-none-any.whl (12 kB)
+Downloading traitlets-5.14.2-py3-none-any.whl (85 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 85.4/85.4 kB 3.8 MB/s eta 0:00:00
+Downloading validators-0.24.0-py3-none-any.whl (27 kB)
+Downloading wcwidth-0.2.13-py2.py3-none-any.whl (34 kB)
+Downloading werkzeug-3.0.1-py3-none-any.whl (226 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 226.7/226.7 kB 11.1 MB/s eta 0:00:00
+Downloading wrapt-1.16.0-cp310-cp310-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl (80 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 80.3/80.3 kB 3.9 MB/s eta 0:00:00
+Downloading yapf-0.40.2-py3-none-any.whl (254 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 254.7/254.7 kB 6.2 MB/s eta 0:00:00
+Downloading zipp-3.18.1-py3-none-any.whl (8.2 kB)
+Building wheels for collected packages: basicsr, dcase-util, fire, kapre, moviepy, resampy, sed-eval, stopit
+  Building wheel for basicsr (setup.py): started
+  Building wheel for basicsr (setup.py): finished with status 'done'
+  Created wheel for basicsr: filename=basicsr-1.4.2-py3-none-any.whl size=214818 sha256=39972b015b6df245cc924dbfec85637df8d1080e8ec6c2e53ad4dceeda4c4f27
+  Stored in directory: /lustre/home/acct-stu/stu312/.cache/pip/wheels/38/83/99/2d8437cc652a01af27df5ff037a4075e95b52d67705c5f30ca
+  Building wheel for dcase-util (setup.py): started
+  Building wheel for dcase-util (setup.py): finished with status 'done'
+  Created wheel for dcase-util: filename=dcase_util-0.2.20-py3-none-any.whl size=2164588 sha256=64efc1794b918222894d1f24108609510d22ece0a965338413bc0a0efadc5085
+  Stored in directory: /lustre/home/acct-stu/stu312/.cache/pip/wheels/55/33/01/ff8f027eb9a938cd294b41c33e502e3deceb60ec394183769d
+  Building wheel for fire (setup.py): started
+  Building wheel for fire (setup.py): finished with status 'done'
+  Created wheel for fire: filename=fire-0.6.0-py2.py3-none-any.whl size=117033 sha256=0cbae696c6ca5c26b52098f7816bacb1978256c76490320c10f3918eeb85e5f6
+  Stored in directory: /lustre/home/acct-stu/stu312/.cache/pip/wheels/d6/6d/5d/5b73fa0f46d01a793713f8859201361e9e581ced8c75e5c6a3
+  Building wheel for kapre (pyproject.toml): started
+  Building wheel for kapre (pyproject.toml): finished with status 'done'
+  Created wheel for kapre: filename=kapre-0.3.7-py3-none-any.whl size=29602 sha256=53e062b1fbe346781f67b0c65f77712c6724491376229c365521a585943294d9
+  Stored in directory: /lustre/home/acct-stu/stu312/.cache/pip/wheels/3e/54/f9/37e9f36590a5431dc207f7dc0eb2e607ff8958d5728e45ef58
+  Building wheel for moviepy (setup.py): started
+  Building wheel for moviepy (setup.py): finished with status 'done'
+  Created wheel for moviepy: filename=moviepy-1.0.3-py3-none-any.whl size=110721 sha256=f7c270cca174978e0f0a0b70ea4e8f939ed865b621e855904ceb77f1c3661e91
+  Stored in directory: /lustre/home/acct-stu/stu312/.cache/pip/wheels/96/32/2d/e10123bd88fbfc02fed53cc18c80a171d3c87479ed845fa7c1
+  Building wheel for resampy (setup.py): started
+  Building wheel for resampy (setup.py): finished with status 'done'
+  Created wheel for resampy: filename=resampy-0.2.2-py3-none-any.whl size=320708 sha256=fc2abb2dcc3b22094477296cd777937b5d03d23e4b2f7b7a2a31e1c2deabbe93
+  Stored in directory: /lustre/home/acct-stu/stu312/.cache/pip/wheels/e5/a0/79/29e61754e5b3941ad4c7d01bf5bea99768e64e4bdd3180f32b
+  Building wheel for sed-eval (setup.py): started
+  Building wheel for sed-eval (setup.py): finished with status 'done'
+  Created wheel for sed-eval: filename=sed_eval-0.2.1-py3-none-any.whl size=26098 sha256=92fa8423aa2094527c1b2065859c71262997b03e6472b20d7159699be4dde254
+  Stored in directory: /lustre/home/acct-stu/stu312/.cache/pip/wheels/42/a5/72/8e29db552a620b55434766ea7a4cfc7a08f93a4bd226a5bb38
+  Building wheel for stopit (setup.py): started
+  Building wheel for stopit (setup.py): finished with status 'done'
+  Created wheel for stopit: filename=stopit-1.1.2-py3-none-any.whl size=11939 sha256=43bae24747bc20962b42f1dde5a446c94158e7e1abeb3298fd64c5fcef1abf1f
+  Stored in directory: /lustre/home/acct-stu/stu312/.cache/pip/wheels/af/f9/87/bf5b3d565c2a007b4dae9d8142dccc85a9f164e517062dd519
+Successfully built basicsr dcase-util fire kapre moviepy resampy sed-eval stopit
+Installing collected packages: wcwidth, stopit, scikit-multilearn, pure-eval, ptyprocess, namex, lmdb, libclang, flatbuffers, addict, zipp, wrapt, werkzeug, validators, traitlets, tomli, tifffile, threadpoolctl, termcolor, tensorflow-io-gcs-filesystem, tensorboard-data-server, soxr, scipy, python-magic, pypeln, pyparsing, pygments, pycparser, protobuf, prompt-toolkit, proglog, platformdirs, pexpect, parso, optree, opt-einsum, opencv-python, msgpack, ml-dtypes, mdurl, markdown, llvmlite, lazy-loader, kiwisolver, imageio-ffmpeg, imageio, h5py, grpcio, google-pasta, gast, future, fsspec, fonttools, executing, exceptiongroup, decorator, audioread, astunparse, asttokens, absl-py, tensorboard, tb-nightly, stack-data, scikit-learn, scikit-image, pydot-ng, pooch, numba, moviepy, matplotlib-inline, matplotlib, markdown-it-py, jedi, importlib-metadata, fire, cffi, yapf, soundfile, rich, resampy, pycocotools, ipython, pycocoevalcap, librosa, keras, basicsr, tensorflow, dcase-util, sed-eval, kapre
+  Attempting uninstall: pyparsing
+    Found existing installation: pyparsing 3.0.9
+    Uninstalling pyparsing-3.0.9:
+      Successfully uninstalled pyparsing-3.0.9
+  Attempting uninstall: kiwisolver
+    Found existing installation: kiwisolver 1.4.2
+    Uninstalling kiwisolver-1.4.2:
+      Successfully uninstalled kiwisolver-1.4.2
+  Attempting uninstall: fonttools
+    Found existing installation: fonttools 4.33.3
+    Uninstalling fonttools-4.33.3:
+      Successfully uninstalled fonttools-4.33.3
+  Attempting uninstall: matplotlib
+    Found existing installation: matplotlib 3.8.0
+    Uninstalling matplotlib-3.8.0:
+      Successfully uninstalled matplotlib-3.8.0
+Successfully installed absl-py-2.1.0 addict-2.4.0 asttokens-2.4.1 astunparse-1.6.3 audioread-3.0.1 basicsr-1.4.2 cffi-1.16.0 dcase-util-0.2.20 decorator-4.4.2 exceptiongroup-1.2.0 executing-2.0.1 fire-0.6.0 flatbuffers-24.3.25 fonttools-4.50.0 fsspec-2024.3.1 future-1.0.0 gast-0.5.4 google-pasta-0.2.0 grpcio-1.62.1 h5py-3.10.0 imageio-2.34.0 imageio-ffmpeg-0.4.9 importlib-metadata-7.1.0 ipython-8.22.2 jedi-0.19.1 kapre-0.3.7 keras-3.1.1 kiwisolver-1.4.5 lazy-loader-0.3 libclang-18.1.1 librosa-0.10.1 llvmlite-0.42.0 lmdb-1.4.1 markdown-3.6 markdown-it-py-3.0.0 matplotlib-3.8.3 matplotlib-inline-0.1.6 mdurl-0.1.2 ml-dtypes-0.3.2 moviepy-1.0.3 msgpack-1.0.8 namex-0.0.7 numba-0.59.1 opencv-python-4.9.0.80 opt-einsum-3.3.0 optree-0.11.0 parso-0.8.3 pexpect-4.9.0 platformdirs-4.2.0 pooch-1.8.1 proglog-0.1.10 prompt-toolkit-3.0.43 protobuf-4.25.3 ptyprocess-0.7.0 pure-eval-0.2.2 pycocoevalcap-1.2 pycocotools-2.0.7 pycparser-2.21 pydot-ng-2.0.0 pygments-2.17.2 pyparsing-3.1.2 pypeln-0.4.9 python-magic-0.4.27 resampy-0.2.2 rich-13.7.1 scikit-image-0.22.0 scikit-learn-1.4.1.post1 scikit-multilearn-0.2.0 scipy-1.12.0 sed-eval-0.2.1 soundfile-0.12.1 soxr-0.3.7 stack-data-0.6.3 stopit-1.1.2 tb-nightly-2.17.0a20240326 tensorboard-2.16.2 tensorboard-data-server-0.7.2 tensorflow-2.16.1 tensorflow-io-gcs-filesystem-0.36.0 termcolor-2.4.0 threadpoolctl-3.4.0 tifffile-2024.2.12 tomli-2.0.1 traitlets-5.14.2 validators-0.24.0 wcwidth-0.2.13 werkzeug-3.0.1 wrapt-1.16.0 yapf-0.40.2 zipp-3.18.1
+
+done
+#
+# To activate this environment, use
+#
+#     $ conda activate pynew
+#
+# To deactivate an active environment, use
+#
+#     $ conda deactivate
+

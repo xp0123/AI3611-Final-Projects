@@ -1,0 +1,10 @@
+Traceback (most recent call last):
+  File "/lustre/home/acct-stu/stu312/fy/Project/image_captioning/evaluate.py", line 19, in <module>
+    prediction_df = pd.read_json(args.prediction_file)
+  File "/lustre/home/acct-stu/stu312/.conda/envs/pynew/lib/python3.10/site-packages/pandas/io/json/_json.py", line 791, in read_json
+    json_reader = JsonReader(
+  File "/lustre/home/acct-stu/stu312/.conda/envs/pynew/lib/python3.10/site-packages/pandas/io/json/_json.py", line 904, in __init__
+    data = self._get_data_from_filepath(filepath_or_buffer)
+  File "/lustre/home/acct-stu/stu312/.conda/envs/pynew/lib/python3.10/site-packages/pandas/io/json/_json.py", line 960, in _get_data_from_filepath
+    raise FileNotFoundError(f"File {filepath_or_buffer} does not exist")
+FileNotFoundError: File prediction.json does not exist

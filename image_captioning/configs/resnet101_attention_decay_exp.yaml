@@ -1,0 +1,18 @@
+model: resnet101_attention
+outputpath: experiments/resnet101_attention_decay_exp
+
+dataset_base_path: /lustre/home/acct-stu/stu282/Data/image_captioning/data/flickr8k
+vocab_path: utils/vocab_set.pkl
+embedding_dim: 300
+attention_dim: 256
+decoder_size: 256
+sample_method: greed # 'greed' or 'beam'
+decay_method: exp # 'linear' or 'exp' or 'inv_sigmoid'
+train_args:
+    batch_size: 128
+    learning_rate: !!float 1e-3
+    num_epochs: 45
+    save_freq: 10
+eval_args:
+    batch_size: 1
+

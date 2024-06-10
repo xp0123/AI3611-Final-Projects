@@ -1,0 +1,3 @@
+/tmp/slurmd/job33589121/slurm_script: line 30: import: command not found
+/tmp/slurmd/job33589121/slurm_script: line 31: syntax error near unexpected token `'punkt''
+/tmp/slurmd/job33589121/slurm_script: line 31: `nltk.download('punkt')'

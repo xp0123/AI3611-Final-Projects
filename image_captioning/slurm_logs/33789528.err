@@ -1,0 +1,6 @@
+PTBTokenizer tokenized 64178 tokens at 380328.09 tokens per second.
+PTBTokenizer tokenized 11261 tokens at 108105.98 tokens per second.
+Traceback (most recent call last):
+  File "/lustre/home/acct-stu/stu312/fy/Project/image_captioning/evaluate.py", line 74, in <module>
+    len_ = len(spider_scores[0])
+NameError: name 'spider_scores' is not defined

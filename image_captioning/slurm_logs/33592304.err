@@ -1,0 +1,14 @@
+Traceback (most recent call last):
+  File "/lustre/home/acct-stu/stu312/fy/Project/image_captioning/main.py", line 376, in <module>
+    fire.Fire(Runner)
+  File "/lustre/home/acct-stu/stu312/.conda/envs/pynew/lib/python3.10/site-packages/fire/core.py", line 143, in Fire
+    component_trace = _Fire(component, args, parsed_flag_args, context, name)
+  File "/lustre/home/acct-stu/stu312/.conda/envs/pynew/lib/python3.10/site-packages/fire/core.py", line 477, in _Fire
+    component, remaining_args = _CallAndUpdateTrace(
+  File "/lustre/home/acct-stu/stu312/.conda/envs/pynew/lib/python3.10/site-packages/fire/core.py", line 693, in _CallAndUpdateTrace
+    component = fn(*varargs, **kwargs)
+  File "/lustre/home/acct-stu/stu312/fy/Project/image_captioning/main.py", line 371, in train_evaluate
+    self.train(config_file, **kwargs)
+  File "/lustre/home/acct-stu/stu312/fy/Project/image_captioning/main.py", line 188, in train
+    decay_method=args['decay_method'],
+KeyError: 'decay_method'

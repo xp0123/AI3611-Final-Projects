@@ -1,0 +1,8 @@
+PTBTokenizer tokenized 64178 tokens at 436229.97 tokens per second.
+PTBTokenizer tokenized 11261 tokens at 136258.91 tokens per second.
+Traceback (most recent call last):
+  File "/lustre/home/acct-stu/stu312/fy/Project/image_captioning/evaluate.py", line 77, in <module>
+    spider_scores = [(spider_scores[0][i] + spider_scores[1][i]) / 2 for i in range(len_)]
+  File "/lustre/home/acct-stu/stu312/fy/Project/image_captioning/evaluate.py", line 77, in <listcomp>
+    spider_scores = [(spider_scores[0][i] + spider_scores[1][i]) / 2 for i in range(len_)]
+IndexError: list index out of range

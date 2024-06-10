@@ -1,0 +1,100 @@
+++++++++++++++ Bleu-1 ++++++++++++++
+Bleu-1: 0.586
+------- best-1.000 -------
+img_id: 3259002340_707ce96858.jpg
+reference: ['a black dog with a purple collar and a black leash runs in the grass', 'a black dog with a purple collar is running', 'a black dog with a purple collar running', 'a black dog with purple collar running', 'the black dog is wearing a purple collar with a black leash as he is running']
+prediction: ['black dog with a purple collar is running in the grass']
+------- worst-0.000 -------
+img_id: 3375991133_87d7c40925.jpg
+reference: ['a group of friends play in a lake', 'five people are in a natural water source', 'many children play in the water', 'people in bathing suits bend down and reach into the water of a lake', 'several people are playing outside in the water']
+prediction: ['man is surfing']
++++++++++++++++++++++++++++++++++++
+++++++++++++++ Bleu-2 ++++++++++++++
+Bleu-2: 0.396
+------- best-1.000 -------
+img_id: 3363750526_efcedc47a9.jpg
+reference: ['a black and white dog is running on the beach', 'a dog runs on the beach', 'black and white dog on wet sand', 'the black and white dog is running in the damp sand', 'this large black and white dog is running on the sand']
+prediction: ['black and white dog runs on the beach']
+------- worst-0.000 -------
+img_id: 3375991133_87d7c40925.jpg
+reference: ['a group of friends play in a lake', 'five people are in a natural water source', 'many children play in the water', 'people in bathing suits bend down and reach into the water of a lake', 'several people are playing outside in the water']
+prediction: ['man is surfing']
++++++++++++++++++++++++++++++++++++
+++++++++++++++ Bleu-3 ++++++++++++++
+Bleu-3: 0.264
+------- best-1.000 -------
+img_id: 2346401538_f5e8da66fc.jpg
+reference: ['a woman holding onto a camera smiling at the camera', 'a woman with a blue hat and blue and red jacket setting up a camera on a tripod', 'a woman with a camera on a tripod is smiling for another camera', 'people at a photo shoot', 'the woman in blue is operating a camera in front of two other women']
+prediction: ['woman with a camera on a tripod']
+------- worst-0.000 -------
+img_id: 3375991133_87d7c40925.jpg
+reference: ['a group of friends play in a lake', 'five people are in a natural water source', 'many children play in the water', 'people in bathing suits bend down and reach into the water of a lake', 'several people are playing outside in the water']
+prediction: ['man is surfing']
++++++++++++++++++++++++++++++++++++
+++++++++++++++ Bleu-4 ++++++++++++++
+Bleu-4: 0.173
+------- best-1.000 -------
+img_id: 670609997_5c7fdb3f0b.jpg
+reference: ['a black and white dog jumping in the air to catch a frisbee', 'a black and white dog jumping in a yard', 'a black dog jumps for a frisbee in a backyard with a white fence', 'a dog catches a flying disk in a yard with a tree', 'a jumping dog in motion']
+prediction: ['black and white dog jumping in the air to catch a frisbee']
+------- worst-0.000 -------
+img_id: 3375991133_87d7c40925.jpg
+reference: ['a group of friends play in a lake', 'five people are in a natural water source', 'many children play in the water', 'people in bathing suits bend down and reach into the water of a lake', 'several people are playing outside in the water']
+prediction: ['man is surfing']
++++++++++++++++++++++++++++++++++++
+++++++++++++++ Rouge ++++++++++++++
+Rouge: 0.403
+------- best-1.000 -------
+img_id: 317488612_70ac35493b.jpg
+reference: ['a dog is playing in the deep snow', 'a dog running through deep snow pack', 'a dog runs through the deep snow', 'a white dog is running through the snow', 'white dog running through snow']
+prediction: ['white dog is running through the snow']
+------- worst-0.000 -------
+img_id: 3375991133_87d7c40925.jpg
+reference: ['a group of friends play in a lake', 'five people are in a natural water source', 'many children play in the water', 'people in bathing suits bend down and reach into the water of a lake', 'several people are playing outside in the water']
+prediction: ['man is surfing']
++++++++++++++++++++++++++++++++++++
+++++++++++++++ METEOR ++++++++++++++
+METEOR: 0.192
+------- best-0.615 -------
+img_id: 670609997_5c7fdb3f0b.jpg
+reference: ['a black and white dog jumping in the air to catch a frisbee', 'a black and white dog jumping in a yard', 'a black dog jumps for a frisbee in a backyard with a white fence', 'a dog catches a flying disk in a yard with a tree', 'a jumping dog in motion']
+prediction: ['black and white dog jumping in the air to catch a frisbee']
+------- worst-0.019 -------
+img_id: 3315616181_15dd137e27.jpg
+reference: ['a man in a green shirt climbs an indoor climbing wall', 'a man in a green shirt is climbing an obstacle course', 'a teenage boy climbs an indoor climbing wall', 'a teenager climbs a rock wall', 'someone climbs an indoor climbing wall']
+prediction: ['skateboarder in the air']
++++++++++++++++++++++++++++++++++++
+++++++++++++++ CIDEr ++++++++++++++
+CIDEr: 0.474
+------- best-4.592 -------
+img_id: 3259002340_707ce96858.jpg
+reference: ['a black dog with a purple collar and a black leash runs in the grass', 'a black dog with a purple collar is running', 'a black dog with a purple collar running', 'a black dog with purple collar running', 'the black dog is wearing a purple collar with a black leash as he is running']
+prediction: ['black dog with a purple collar is running in the grass']
+------- worst-0.000 -------
+img_id: 3375991133_87d7c40925.jpg
+reference: ['a group of friends play in a lake', 'five people are in a natural water source', 'many children play in the water', 'people in bathing suits bend down and reach into the water of a lake', 'several people are playing outside in the water']
+prediction: ['man is surfing']
++++++++++++++++++++++++++++++++++++
+++++++++++++++ SPICE ++++++++++++++
+SPICE: 0.138
+------- best-0.737 -------
+img_id: 3259002340_707ce96858.jpg
+reference: ['a black dog with a purple collar and a black leash runs in the grass', 'a black dog with a purple collar is running', 'a black dog with a purple collar running', 'a black dog with purple collar running', 'the black dog is wearing a purple collar with a black leash as he is running']
+prediction: ['black dog with a purple collar is running in the grass']
+------- worst-0.000 -------
+img_id: 1122944218_8eb3607403.jpg
+reference: ['a baby in a white garment holds a flag with crescent moon and star', 'a baby is holding a small black flag with a moon and a star on it', 'a baby wearing a white gown waves a muslim flag', 'a little toddler dressed in white is smiling while a lady helps him wave a flag', 'baby in white outfit holding black and white flag']
+prediction: ['young boy wearing a white jacket']
++++++++++++++++++++++++++++++++++++
+++++++++++++++ SPIDEr ++++++++++++++
+SPIDEr: 0.306
+------- best-2.664 -------
+img_id: 3259002340_707ce96858.jpg
+reference: ['a black dog with a purple collar and a black leash runs in the grass', 'a black dog with a purple collar is running', 'a black dog with a purple collar running', 'a black dog with purple collar running', 'the black dog is wearing a purple collar with a black leash as he is running']
+prediction: ['black dog with a purple collar is running in the grass']
+------- worst-0.000 -------
+img_id: 3375991133_87d7c40925.jpg
+reference: ['a group of friends play in a lake', 'five people are in a natural water source', 'many children play in the water', 'people in bathing suits bend down and reach into the water of a lake', 'several people are playing outside in the water']
+prediction: ['man is surfing']
++++++++++++++++++++++++++++++++++++
+SPIDEr: 0.306
