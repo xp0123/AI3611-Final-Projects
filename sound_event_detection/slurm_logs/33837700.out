@@ -1,0 +1,21 @@
+no change     /lustre/home/acct-stu/stu282/Tools/miniconda3/condabin/conda
+no change     /lustre/home/acct-stu/stu282/Tools/miniconda3/bin/conda
+no change     /lustre/home/acct-stu/stu282/Tools/miniconda3/bin/conda-env
+no change     /lustre/home/acct-stu/stu282/Tools/miniconda3/bin/activate
+no change     /lustre/home/acct-stu/stu282/Tools/miniconda3/bin/deactivate
+no change     /lustre/home/acct-stu/stu282/Tools/miniconda3/etc/profile.d/conda.sh
+no change     /lustre/home/acct-stu/stu282/Tools/miniconda3/etc/fish/conf.d/conda.fish
+no change     /lustre/home/acct-stu/stu282/Tools/miniconda3/shell/condabin/Conda.psm1
+no change     /lustre/home/acct-stu/stu282/Tools/miniconda3/shell/condabin/conda-hook.ps1
+no change     /lustre/home/acct-stu/stu282/Tools/miniconda3/lib/python3.12/site-packages/xontrib/conda.xsh
+no change     /lustre/home/acct-stu/stu282/Tools/miniconda3/etc/profile.d/conda.csh
+no change     /lustre/home/acct-stu/stu312/.bashrc
+No action taken.
+mAP: [0.89791189 0.63131067 0.68897488 0.85706311 0.44906789 0.53467303
+ 0.5758283  0.77836852 0.68546191 0.75536094]
+Quick Report: 
+|               |   f_measure |   precision |   recall |
+|---------------|-------------|-------------|----------|
+| event_based   |   0.0987306 |    0.108211 | 0.104761 |
+| segment_based |   0.577496  |    0.666945 | 0.518444 |
+| tagging_based |   0.650072  |    0.727    | 0.59465  |

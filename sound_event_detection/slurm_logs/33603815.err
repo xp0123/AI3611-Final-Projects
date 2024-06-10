@@ -1,0 +1,108 @@
+[2024-05-27 11:28:17] Storing files in experiments/Crnn/2024-05-27_11-28-05_28a1c4e01bd911ef849e5cff35c18da5
+[2024-05-27 11:28:17] batch_size: 64
+[2024-05-27 11:28:17] data:
+[2024-05-27 11:28:17]   class_indice_file: data/metadata/class_label_indices.txt
+[2024-05-27 11:28:17]   feature: data/dev/feature.csv
+[2024-05-27 11:28:17]   label: data/dev/label.csv
+[2024-05-27 11:28:17]   stratified: true
+[2024-05-27 11:28:17] dataloader_args:
+[2024-05-27 11:28:17]   batch_size: 64
+[2024-05-27 11:28:17]   num_workers: 1
+[2024-05-27 11:28:17] early_stop: 7
+[2024-05-27 11:28:17] epochs: 100
+[2024-05-27 11:28:17] eval_data:
+[2024-05-27 11:28:17]   feature: data/eval/feature.csv
+[2024-05-27 11:28:17]   label: data/eval/label.csv
+[2024-05-27 11:28:17] loss: BceLoss
+[2024-05-27 11:28:17] model:
+[2024-05-27 11:28:17]   args: {}
+[2024-05-27 11:28:17]   type: Crnn
+[2024-05-27 11:28:17] num_workers: 2
+[2024-05-27 11:28:17] optimizer:
+[2024-05-27 11:28:17]   args:
+[2024-05-27 11:28:17]     lr: 0.001
+[2024-05-27 11:28:17]   type: AdamW
+[2024-05-27 11:28:17] outputpath: experiments/
+[2024-05-27 11:28:17] scheduler_args:
+[2024-05-27 11:28:17]   factor: 0.1
+[2024-05-27 11:28:17]   patience: 3
+[2024-05-27 11:28:17] 
+[2024-05-27 11:28:17] Running on device cuda
+[2024-05-27 11:28:21] AdamW (
+[2024-05-27 11:28:21] Parameter Group 0
+[2024-05-27 11:28:21]     amsgrad: False
+[2024-05-27 11:28:21]     betas: (0.9, 0.999)
+[2024-05-27 11:28:21]     capturable: False
+[2024-05-27 11:28:21]     differentiable: False
+[2024-05-27 11:28:21]     eps: 1e-08
+[2024-05-27 11:28:21]     foreach: None
+[2024-05-27 11:28:21]     fused: None
+[2024-05-27 11:28:21]     lr: 0.001
+[2024-05-27 11:28:21]     maximize: False
+[2024-05-27 11:28:21]     weight_decay: 0.01
+[2024-05-27 11:28:21] )
+[2024-05-27 11:28:21] Crnn(
+[2024-05-27 11:28:21]   (batch_norm): BatchNorm1d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+[2024-05-27 11:28:21]   (conv_block1): Sequential(
+[2024-05-27 11:28:21]     (0): Conv2d(1, 16, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+[2024-05-27 11:28:21]     (1): BatchNorm2d(16, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+[2024-05-27 11:28:21]     (2): ReLU()
+[2024-05-27 11:28:21]     (3): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+[2024-05-27 11:28:21]   )
+[2024-05-27 11:28:21]   (conv_block2): Sequential(
+[2024-05-27 11:28:21]     (0): Conv2d(16, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+[2024-05-27 11:28:21]     (1): BatchNorm2d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+[2024-05-27 11:28:21]     (2): ReLU()
+[2024-05-27 11:28:21]     (3): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+[2024-05-27 11:28:21]   )
+[2024-05-27 11:28:21]   (conv_block3): Sequential(
+[2024-05-27 11:28:21]     (0): Conv2d(32, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+[2024-05-27 11:28:21]     (1): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+[2024-05-27 11:28:21]     (2): ReLU()
+[2024-05-27 11:28:21]     (3): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+[2024-05-27 11:28:21]   )
+[2024-05-27 11:28:21]   (conv_block4): Sequential(
+[2024-05-27 11:28:21]     (0): Conv2d(64, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+[2024-05-27 11:28:21]     (1): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+[2024-05-27 11:28:21]     (2): ReLU()
+[2024-05-27 11:28:21]     (3): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+[2024-05-27 11:28:21]   )
+[2024-05-27 11:28:21]   (conv_block5): Sequential(
+[2024-05-27 11:28:21]     (0): Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+[2024-05-27 11:28:21]     (1): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+[2024-05-27 11:28:21]     (2): ReLU()
+[2024-05-27 11:28:21]     (3): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+[2024-05-27 11:28:21]   )
+[2024-05-27 11:28:21]   (biGRU): GRU(256, 128, batch_first=True, bidirectional=True)
+[2024-05-27 11:28:21]   (fc): Linear(in_features=128, out_features=10, bias=True)
+[2024-05-27 11:28:21] )
+  0%|          | 0/23 [00:00<?, ?batch/s]                                         Traceback (most recent call last):
+  File "/lustre/home/acct-stu/stu312/fy/Project/sound_event_detection/run.py", line 332, in <module>
+    fire.Fire(Runner)
+  File "/lustre/home/acct-stu/stu282/Tools/miniconda3/envs/py3.10.11/lib/python3.10/site-packages/fire/core.py", line 143, in Fire
+    component_trace = _Fire(component, args, parsed_flag_args, context, name)
+  File "/lustre/home/acct-stu/stu282/Tools/miniconda3/envs/py3.10.11/lib/python3.10/site-packages/fire/core.py", line 477, in _Fire
+    component, remaining_args = _CallAndUpdateTrace(
+  File "/lustre/home/acct-stu/stu282/Tools/miniconda3/envs/py3.10.11/lib/python3.10/site-packages/fire/core.py", line 693, in _CallAndUpdateTrace
+    component = fn(*varargs, **kwargs)
+  File "/lustre/home/acct-stu/stu312/fy/Project/sound_event_detection/run.py", line 327, in train_evaluate
+    experiment_path = self.train(config_file)
+  File "/lustre/home/acct-stu/stu312/fy/Project/sound_event_detection/run.py", line 134, in train
+    output = self._forward(model, batch)
+  File "/lustre/home/acct-stu/stu312/fy/Project/sound_event_detection/run.py", line 51, in _forward
+    output = model(feat)
+  File "/lustre/home/acct-stu/stu282/Tools/miniconda3/envs/py3.10.11/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1511, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/lustre/home/acct-stu/stu282/Tools/miniconda3/envs/py3.10.11/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1520, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/lustre/home/acct-stu/stu312/fy/Project/sound_event_detection/models.py", line 86, in forward
+    frame_prob = self.detection(x)  # (batch_size, time_steps, class_num)
+  File "/lustre/home/acct-stu/stu312/fy/Project/sound_event_detection/models.py", line 80, in detection
+    f = self.fc(f)
+  File "/lustre/home/acct-stu/stu282/Tools/miniconda3/envs/py3.10.11/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1511, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/lustre/home/acct-stu/stu282/Tools/miniconda3/envs/py3.10.11/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1520, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/lustre/home/acct-stu/stu282/Tools/miniconda3/envs/py3.10.11/lib/python3.10/site-packages/torch/nn/modules/linear.py", line 116, in forward
+    return F.linear(input, self.weight, self.bias)
+RuntimeError: mat1 and mat2 shapes cannot be multiplied (960x256 and 128x10)

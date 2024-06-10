@@ -1,0 +1,48 @@
+[2024-06-08 18:53:22] Storing files in experiments/aug_timeshift/Crnn/2024-06-08_18-53-06_52dc4a9a258511efb19a5cff35c1d408
+[2024-06-08 18:53:22] aug_method:
+[2024-06-08 18:53:22] - time_shift
+[2024-06-08 18:53:22] batch_size: 64
+[2024-06-08 18:53:22] data:
+[2024-06-08 18:53:22]   class_indice_file: data/metadata/class_label_indices.txt
+[2024-06-08 18:53:22]   feature: data/dev/feature.csv
+[2024-06-08 18:53:22]   label: data/dev/label.csv
+[2024-06-08 18:53:22]   stratified: true
+[2024-06-08 18:53:22] dataloader_args:
+[2024-06-08 18:53:22]   batch_size: 64
+[2024-06-08 18:53:22]   num_workers: 1
+[2024-06-08 18:53:22] early_stop: 7
+[2024-06-08 18:53:22] epochs: 100
+[2024-06-08 18:53:22] eval_data:
+[2024-06-08 18:53:22]   feature: data/eval/feature.csv
+[2024-06-08 18:53:22]   label: data/eval/label.csv
+[2024-06-08 18:53:22] loss: BceLoss
+[2024-06-08 18:53:22] model:
+[2024-06-08 18:53:22]   args: {}
+[2024-06-08 18:53:22]   type: Crnn
+[2024-06-08 18:53:22] num_workers: 2
+[2024-06-08 18:53:22] optimizer:
+[2024-06-08 18:53:22]   args:
+[2024-06-08 18:53:22]     lr: 0.001
+[2024-06-08 18:53:22]   type: AdamW
+[2024-06-08 18:53:22] outputpath: experiments/aug_timeshift
+[2024-06-08 18:53:22] scheduler_args:
+[2024-06-08 18:53:22]   factor: 0.1
+[2024-06-08 18:53:22]   patience: 3
+[2024-06-08 18:53:22] 
+[2024-06-08 18:53:22] Running on device cuda
+Traceback (most recent call last):
+  File "/lustre/home/acct-stu/stu312/fy/Project/sound_event_detection/run.py", line 338, in <module>
+    fire.Fire(Runner)
+  File "/lustre/home/acct-stu/stu282/Tools/miniconda3/envs/py3.10.11/lib/python3.10/site-packages/fire/core.py", line 143, in Fire
+    component_trace = _Fire(component, args, parsed_flag_args, context, name)
+  File "/lustre/home/acct-stu/stu282/Tools/miniconda3/envs/py3.10.11/lib/python3.10/site-packages/fire/core.py", line 477, in _Fire
+    component, remaining_args = _CallAndUpdateTrace(
+  File "/lustre/home/acct-stu/stu282/Tools/miniconda3/envs/py3.10.11/lib/python3.10/site-packages/fire/core.py", line 693, in _CallAndUpdateTrace
+    component = fn(*varargs, **kwargs)
+  File "/lustre/home/acct-stu/stu312/fy/Project/sound_event_detection/run.py", line 333, in train_evaluate
+    experiment_path = self.train(config_file)
+  File "/lustre/home/acct-stu/stu312/fy/Project/sound_event_detection/run.py", line 85, in train
+    transform = utils.augmentation_transforms(config["aug_method"])
+  File "/lustre/home/acct-stu/stu312/fy/Project/sound_event_detection/utils.py", line 44, in augmentation_transforms
+    return torch.nn.Sequential(*transforms)
+NameError: name 'torch' is not defined

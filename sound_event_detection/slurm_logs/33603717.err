@@ -1,0 +1,48 @@
+[2024-05-27 11:12:22] Storing files in experiments/Crnn/2024-05-27_11-12-05_ef85d0f41bd611efa1b65cff35c18db0
+[2024-05-27 11:12:22] batch_size: 64
+[2024-05-27 11:12:22] data:
+[2024-05-27 11:12:22]   class_indice_file: data/metadata/class_label_indices.txt
+[2024-05-27 11:12:22]   feature: data/dev/feature.csv
+[2024-05-27 11:12:22]   label: data/dev/label.csv
+[2024-05-27 11:12:22]   stratified: true
+[2024-05-27 11:12:22] dataloader_args:
+[2024-05-27 11:12:22]   batch_size: 64
+[2024-05-27 11:12:22]   num_workers: 1
+[2024-05-27 11:12:22] early_stop: 7
+[2024-05-27 11:12:22] epochs: 100
+[2024-05-27 11:12:22] eval_data:
+[2024-05-27 11:12:22]   feature: data/eval/feature.csv
+[2024-05-27 11:12:22]   label: data/eval/label.csv
+[2024-05-27 11:12:22] loss: BceLoss
+[2024-05-27 11:12:22] model:
+[2024-05-27 11:12:22]   args: {}
+[2024-05-27 11:12:22]   type: Crnn
+[2024-05-27 11:12:22] num_workers: 2
+[2024-05-27 11:12:22] optimizer:
+[2024-05-27 11:12:22]   args:
+[2024-05-27 11:12:22]     lr: 0.001
+[2024-05-27 11:12:22]   type: AdamW
+[2024-05-27 11:12:22] outputpath: experiments/
+[2024-05-27 11:12:22] scheduler_args:
+[2024-05-27 11:12:22]   factor: 0.1
+[2024-05-27 11:12:22]   patience: 3
+[2024-05-27 11:12:22] 
+[2024-05-27 11:12:22] Running on device cuda
+Traceback (most recent call last):
+  File "/lustre/home/acct-stu/stu312/fy/Project/sound_event_detection/run.py", line 332, in <module>
+    fire.Fire(Runner)
+  File "/lustre/home/acct-stu/stu282/Tools/miniconda3/envs/py3.10.11/lib/python3.10/site-packages/fire/core.py", line 143, in Fire
+    component_trace = _Fire(component, args, parsed_flag_args, context, name)
+  File "/lustre/home/acct-stu/stu282/Tools/miniconda3/envs/py3.10.11/lib/python3.10/site-packages/fire/core.py", line 477, in _Fire
+    component, remaining_args = _CallAndUpdateTrace(
+  File "/lustre/home/acct-stu/stu282/Tools/miniconda3/envs/py3.10.11/lib/python3.10/site-packages/fire/core.py", line 693, in _CallAndUpdateTrace
+    component = fn(*varargs, **kwargs)
+  File "/lustre/home/acct-stu/stu312/fy/Project/sound_event_detection/run.py", line 327, in train_evaluate
+    experiment_path = self.train(config_file)
+  File "/lustre/home/acct-stu/stu312/fy/Project/sound_event_detection/run.py", line 108, in train
+    model = getattr(models, config['model']["type"])(
+  File "/lustre/home/acct-stu/stu312/fy/Project/sound_event_detection/models.py", line 20, in __init__
+    self.batch_norm = nn.BatchNorm1d(num_freq)
+  File "/lustre/home/acct-stu/stu282/Tools/miniconda3/envs/py3.10.11/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1716, in __setattr__
+    raise AttributeError(
+AttributeError: cannot assign module before Module.__init__() call

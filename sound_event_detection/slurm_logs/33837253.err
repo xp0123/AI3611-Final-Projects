@@ -1,0 +1,120 @@
+[2024-06-08 18:55:08] Storing files in experiments/aug_timeshift/Crnn/2024-06-08_18-55-06_926f72e0258511ef99225cff35c1d408
+[2024-06-08 18:55:08] aug_method:
+[2024-06-08 18:55:08] - time_shift
+[2024-06-08 18:55:08] batch_size: 64
+[2024-06-08 18:55:08] data:
+[2024-06-08 18:55:08]   class_indice_file: data/metadata/class_label_indices.txt
+[2024-06-08 18:55:08]   feature: data/dev/feature.csv
+[2024-06-08 18:55:08]   label: data/dev/label.csv
+[2024-06-08 18:55:08]   stratified: true
+[2024-06-08 18:55:08] dataloader_args:
+[2024-06-08 18:55:08]   batch_size: 64
+[2024-06-08 18:55:08]   num_workers: 1
+[2024-06-08 18:55:08] early_stop: 7
+[2024-06-08 18:55:08] epochs: 100
+[2024-06-08 18:55:08] eval_data:
+[2024-06-08 18:55:08]   feature: data/eval/feature.csv
+[2024-06-08 18:55:08]   label: data/eval/label.csv
+[2024-06-08 18:55:08] loss: BceLoss
+[2024-06-08 18:55:08] model:
+[2024-06-08 18:55:08]   args: {}
+[2024-06-08 18:55:08]   type: Crnn
+[2024-06-08 18:55:08] num_workers: 2
+[2024-06-08 18:55:08] optimizer:
+[2024-06-08 18:55:08]   args:
+[2024-06-08 18:55:08]     lr: 0.001
+[2024-06-08 18:55:08]   type: AdamW
+[2024-06-08 18:55:08] outputpath: experiments/aug_timeshift
+[2024-06-08 18:55:08] scheduler_args:
+[2024-06-08 18:55:08]   factor: 0.1
+[2024-06-08 18:55:08]   patience: 3
+[2024-06-08 18:55:08] 
+[2024-06-08 18:55:08] Running on device cuda
+[2024-06-08 18:55:09] Transforms:
+[2024-06-08 18:55:09] Sequential(
+[2024-06-08 18:55:09]   (0): time_shift()
+[2024-06-08 18:55:09] )
+[2024-06-08 18:55:10] AdamW (
+[2024-06-08 18:55:10] Parameter Group 0
+[2024-06-08 18:55:10]     amsgrad: False
+[2024-06-08 18:55:10]     betas: (0.9, 0.999)
+[2024-06-08 18:55:10]     capturable: False
+[2024-06-08 18:55:10]     differentiable: False
+[2024-06-08 18:55:10]     eps: 1e-08
+[2024-06-08 18:55:10]     foreach: None
+[2024-06-08 18:55:10]     fused: None
+[2024-06-08 18:55:10]     lr: 0.001
+[2024-06-08 18:55:10]     maximize: False
+[2024-06-08 18:55:10]     weight_decay: 0.01
+[2024-06-08 18:55:10] )
+[2024-06-08 18:55:10] Crnn(
+[2024-06-08 18:55:10]   (batch_norm): BatchNorm1d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+[2024-06-08 18:55:10]   (conv_block1): Sequential(
+[2024-06-08 18:55:10]     (0): Conv2d(1, 16, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+[2024-06-08 18:55:10]     (1): BatchNorm2d(16, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+[2024-06-08 18:55:10]     (2): ReLU()
+[2024-06-08 18:55:10]     (3): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+[2024-06-08 18:55:10]   )
+[2024-06-08 18:55:10]   (conv_block2): Sequential(
+[2024-06-08 18:55:10]     (0): Conv2d(16, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+[2024-06-08 18:55:10]     (1): BatchNorm2d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+[2024-06-08 18:55:10]     (2): ReLU()
+[2024-06-08 18:55:10]     (3): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+[2024-06-08 18:55:10]   )
+[2024-06-08 18:55:10]   (conv_block3): Sequential(
+[2024-06-08 18:55:10]     (0): Conv2d(32, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+[2024-06-08 18:55:10]     (1): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+[2024-06-08 18:55:10]     (2): ReLU()
+[2024-06-08 18:55:10]     (3): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+[2024-06-08 18:55:10]   )
+[2024-06-08 18:55:10]   (conv_block4): Sequential(
+[2024-06-08 18:55:10]     (0): Conv2d(64, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+[2024-06-08 18:55:10]     (1): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+[2024-06-08 18:55:10]     (2): ReLU()
+[2024-06-08 18:55:10]     (3): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+[2024-06-08 18:55:10]   )
+[2024-06-08 18:55:10]   (conv_block5): Sequential(
+[2024-06-08 18:55:10]     (0): Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+[2024-06-08 18:55:10]     (1): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+[2024-06-08 18:55:10]     (2): ReLU()
+[2024-06-08 18:55:10]     (3): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+[2024-06-08 18:55:10]   )
+[2024-06-08 18:55:10]   (biGRU): GRU(256, 128, batch_first=True, bidirectional=True)
+[2024-06-08 18:55:10]   (fc): Linear(in_features=256, out_features=10, bias=True)
+[2024-06-08 18:55:10] )
+  0%|          | 0/23 [00:00<?, ?batch/s]  4%|▍         | 1/23 [00:02<01:04,  2.92s/batch]  9%|▊         | 2/23 [00:03<00:30,  1.44s/batch] 13%|█▎        | 3/23 [00:04<00:24,  1.22s/batch] 17%|█▋        | 4/23 [00:04<00:18,  1.04batch/s] 22%|██▏       | 5/23 [00:05<00:14,  1.24batch/s] 26%|██▌       | 6/23 [00:05<00:11,  1.53batch/s] 30%|███       | 7/23 [00:06<00:09,  1.78batch/s] 35%|███▍      | 8/23 [00:06<00:06,  2.20batch/s] 39%|███▉      | 9/23 [00:06<00:05,  2.73batch/s] 43%|████▎     | 10/23 [00:06<00:03,  3.30batch/s] 48%|████▊     | 11/23 [00:06<00:03,  3.93batch/s] 52%|█████▏    | 12/23 [00:06<00:02,  4.64batch/s] 57%|█████▋    | 13/23 [00:07<00:02,  4.77batch/s] 61%|██████    | 14/23 [00:07<00:01,  5.53batch/s] 65%|██████▌   | 15/23 [00:07<00:01,  6.18batch/s] 70%|██████▉   | 16/23 [00:07<00:01,  6.84batch/s] 74%|███████▍  | 17/23 [00:07<00:00,  6.41batch/s] 78%|███████▊  | 18/23 [00:07<00:00,  7.07batch/s] 83%|████████▎ | 19/23 [00:07<00:00,  7.41batch/s] 87%|████████▋ | 20/23 [00:07<00:00,  7.86batch/s] 91%|█████████▏| 21/23 [00:08<00:00,  7.43batch/s] 96%|█████████▌| 22/23 [00:08<00:00,  7.83batch/s]                                                    0%|          | 0/23 [00:00<?, ?batch/s]  4%|▍         | 1/23 [00:00<00:09,  2.35batch/s] 13%|█▎        | 3/23 [00:00<00:03,  6.05batch/s]                                                 /lustre/home/acct-stu/stu282/Tools/miniconda3/envs/py3.10.11/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1509: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+[2024-06-08 18:55:19] Epoch 1   training_loss: 0.38  val_loss: 0.36  precision: 0.00  recall: 0.00  f1: 0.00
+  0%|          | 0/23 [00:00<?, ?batch/s]  4%|▍         | 1/23 [00:00<00:10,  2.04batch/s] 22%|██▏       | 5/23 [00:00<00:01, 10.15batch/s] 39%|███▉      | 9/23 [00:00<00:00, 16.67batch/s] 57%|█████▋    | 13/23 [00:00<00:00, 21.97batch/s] 74%|███████▍  | 17/23 [00:00<00:00, 26.10batch/s] 91%|█████████▏| 21/23 [00:01<00:00, 29.24batch/s]                                                    0%|          | 0/23 [00:00<?, ?batch/s]  4%|▍         | 1/23 [00:00<00:07,  3.09batch/s]                                                 /lustre/home/acct-stu/stu282/Tools/miniconda3/envs/py3.10.11/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1509: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+[2024-06-08 18:55:20] Epoch 2   training_loss: 0.31  val_loss: 0.31  precision: 0.23  recall: 0.09  f1: 0.11
+  0%|          | 0/23 [00:00<?, ?batch/s]  4%|▍         | 1/23 [00:00<00:07,  3.14batch/s] 22%|██▏       | 5/23 [00:00<00:01, 14.23batch/s] 39%|███▉      | 9/23 [00:00<00:00, 21.41batch/s] 57%|█████▋    | 13/23 [00:00<00:00, 26.00batch/s] 74%|███████▍  | 17/23 [00:00<00:00, 28.84batch/s] 91%|█████████▏| 21/23 [00:00<00:00, 30.64batch/s]                                                    0%|          | 0/23 [00:00<?, ?batch/s]  4%|▍         | 1/23 [00:00<00:08,  2.46batch/s]                                                 /lustre/home/acct-stu/stu282/Tools/miniconda3/envs/py3.10.11/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1509: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+[2024-06-08 18:55:22] Epoch 3   training_loss: 0.27  val_loss: 0.28  precision: 0.50  recall: 0.21  f1: 0.27
+  0%|          | 0/23 [00:00<?, ?batch/s]  4%|▍         | 1/23 [00:00<00:07,  2.98batch/s] 22%|██▏       | 5/23 [00:00<00:01, 13.74batch/s] 39%|███▉      | 9/23 [00:00<00:00, 21.09batch/s] 57%|█████▋    | 13/23 [00:00<00:00, 26.10batch/s] 74%|███████▍  | 17/23 [00:00<00:00, 29.62batch/s] 91%|█████████▏| 21/23 [00:00<00:00, 32.05batch/s]                                                    0%|          | 0/23 [00:00<?, ?batch/s]  4%|▍         | 1/23 [00:00<00:05,  3.98batch/s]                                                 /lustre/home/acct-stu/stu282/Tools/miniconda3/envs/py3.10.11/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1509: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+[2024-06-08 18:55:23] Epoch 4   training_loss: 0.24  val_loss: 0.27  precision: 0.62  recall: 0.28  f1: 0.33
+  0%|          | 0/23 [00:00<?, ?batch/s]  4%|▍         | 1/23 [00:00<00:09,  2.39batch/s] 22%|██▏       | 5/23 [00:00<00:01, 11.72batch/s] 39%|███▉      | 9/23 [00:00<00:00, 18.78batch/s] 57%|█████▋    | 13/23 [00:00<00:00, 23.42batch/s] 74%|███████▍  | 17/23 [00:00<00:00, 26.67batch/s] 91%|█████████▏| 21/23 [00:00<00:00, 29.10batch/s]                                                    0%|          | 0/23 [00:00<?, ?batch/s]  4%|▍         | 1/23 [00:00<00:07,  2.76batch/s]                                                 /lustre/home/acct-stu/stu282/Tools/miniconda3/envs/py3.10.11/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1509: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+[2024-06-08 18:55:25] Epoch 5   training_loss: 0.22  val_loss: 0.24  precision: 0.64  recall: 0.34  f1: 0.41
+  0%|          | 0/23 [00:00<?, ?batch/s]  4%|▍         | 1/23 [00:00<00:06,  3.21batch/s] 22%|██▏       | 5/23 [00:00<00:01, 14.44batch/s] 39%|███▉      | 9/23 [00:00<00:00, 21.86batch/s] 57%|█████▋    | 13/23 [00:00<00:00, 26.81batch/s] 74%|███████▍  | 17/23 [00:00<00:00, 30.13batch/s] 91%|█████████▏| 21/23 [00:00<00:00, 32.39batch/s]                                                    0%|          | 0/23 [00:00<?, ?batch/s]  4%|▍         | 1/23 [00:00<00:07,  2.94batch/s]                                                 /lustre/home/acct-stu/stu282/Tools/miniconda3/envs/py3.10.11/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1509: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+[2024-06-08 18:55:26] Epoch 6   training_loss: 0.20  val_loss: 0.23  precision: 0.66  recall: 0.47  f1: 0.47
+  0%|          | 0/23 [00:00<?, ?batch/s]  4%|▍         | 1/23 [00:00<00:08,  2.67batch/s] 22%|██▏       | 5/23 [00:00<00:01, 12.67batch/s] 39%|███▉      | 9/23 [00:00<00:00, 19.86batch/s] 57%|█████▋    | 13/23 [00:00<00:00, 24.96batch/s] 74%|███████▍  | 17/23 [00:00<00:00, 28.57batch/s] 91%|█████████▏| 21/23 [00:00<00:00, 31.11batch/s]                                                    0%|          | 0/23 [00:00<?, ?batch/s]  4%|▍         | 1/23 [00:00<00:07,  3.11batch/s]                                                 [2024-06-08 18:55:27] Epoch 7   training_loss: 0.19  val_loss: 0.20  precision: 0.77  recall: 0.48  f1: 0.56
+  0%|          | 0/23 [00:00<?, ?batch/s]  4%|▍         | 1/23 [00:00<00:06,  3.28batch/s] 22%|██▏       | 5/23 [00:00<00:01, 14.09batch/s] 39%|███▉      | 9/23 [00:00<00:00, 21.40batch/s] 57%|█████▋    | 13/23 [00:00<00:00, 26.39batch/s] 74%|███████▍  | 17/23 [00:00<00:00, 29.09batch/s] 91%|█████████▏| 21/23 [00:00<00:00, 30.54batch/s]                                                    0%|          | 0/23 [00:00<?, ?batch/s]  4%|▍         | 1/23 [00:00<00:06,  3.48batch/s]                                                 [2024-06-08 18:55:29] Epoch 8   training_loss: 0.17  val_loss: 0.21  precision: 0.78  recall: 0.44  f1: 0.52
+  0%|          | 0/23 [00:00<?, ?batch/s]  4%|▍         | 1/23 [00:00<00:08,  2.60batch/s] 22%|██▏       | 5/23 [00:00<00:01, 12.44batch/s] 39%|███▉      | 9/23 [00:00<00:00, 19.67batch/s] 57%|█████▋    | 13/23 [00:00<00:00, 24.84batch/s] 74%|███████▍  | 17/23 [00:00<00:00, 28.01batch/s] 91%|█████████▏| 21/23 [00:00<00:00, 30.12batch/s]                                                    0%|          | 0/23 [00:00<?, ?batch/s]  4%|▍         | 1/23 [00:00<00:09,  2.44batch/s]                                                 [2024-06-08 18:55:30] Epoch 9   training_loss: 0.17  val_loss: 0.23  precision: 0.77  recall: 0.55  f1: 0.57
+  0%|          | 0/23 [00:00<?, ?batch/s]  4%|▍         | 1/23 [00:00<00:09,  2.42batch/s] 22%|██▏       | 5/23 [00:00<00:01, 11.81batch/s] 39%|███▉      | 9/23 [00:00<00:00, 18.76batch/s] 57%|█████▋    | 13/23 [00:00<00:00, 23.76batch/s] 74%|███████▍  | 17/23 [00:00<00:00, 27.61batch/s] 91%|█████████▏| 21/23 [00:00<00:00, 30.43batch/s]                                                    0%|          | 0/23 [00:00<?, ?batch/s]  4%|▍         | 1/23 [00:00<00:07,  2.84batch/s]                                                 [2024-06-08 18:55:32] Epoch 10   training_loss: 0.15  val_loss: 0.19  precision: 0.80  recall: 0.59  f1: 0.65
+  0%|          | 0/23 [00:00<?, ?batch/s]  4%|▍         | 1/23 [00:00<00:07,  3.08batch/s] 22%|██▏       | 5/23 [00:00<00:01, 14.04batch/s] 39%|███▉      | 9/23 [00:00<00:00, 21.27batch/s] 57%|█████▋    | 13/23 [00:00<00:00, 26.23batch/s] 74%|███████▍  | 17/23 [00:00<00:00, 29.64batch/s] 91%|█████████▏| 21/23 [00:00<00:00, 31.91batch/s]                                                    0%|          | 0/23 [00:00<?, ?batch/s]  4%|▍         | 1/23 [00:00<00:07,  3.01batch/s]                                                 [2024-06-08 18:55:33] Epoch 11   training_loss: 0.15  val_loss: 0.18  precision: 0.77  recall: 0.64  f1: 0.69
+  0%|          | 0/23 [00:00<?, ?batch/s]  4%|▍         | 1/23 [00:00<00:07,  2.76batch/s] 22%|██▏       | 5/23 [00:00<00:01, 12.85batch/s] 35%|███▍      | 8/23 [00:00<00:00, 17.47batch/s] 52%|█████▏    | 12/23 [00:00<00:00, 23.39batch/s] 70%|██████▉   | 16/23 [00:00<00:00, 27.58batch/s] 87%|████████▋ | 20/23 [00:00<00:00, 30.41batch/s]                                                    0%|          | 0/23 [00:00<?, ?batch/s]  4%|▍         | 1/23 [00:00<00:06,  3.46batch/s]                                                 [2024-06-08 18:55:34] Epoch 12   training_loss: 0.14  val_loss: 0.21  precision: 0.74  recall: 0.57  f1: 0.60
+  0%|          | 0/23 [00:00<?, ?batch/s]  4%|▍         | 1/23 [00:00<00:07,  2.87batch/s] 22%|██▏       | 5/23 [00:00<00:01, 13.35batch/s] 39%|███▉      | 9/23 [00:00<00:00, 20.56batch/s] 57%|█████▋    | 13/23 [00:00<00:00, 25.62batch/s] 74%|███████▍  | 17/23 [00:00<00:00, 29.20batch/s] 91%|█████████▏| 21/23 [00:00<00:00, 31.69batch/s]                                                    0%|          | 0/23 [00:00<?, ?batch/s]  4%|▍         | 1/23 [00:00<00:07,  3.07batch/s]                                                 [2024-06-08 18:55:36] Epoch 13   training_loss: 0.13  val_loss: 0.20  precision: 0.82  recall: 0.55  f1: 0.65
+  0%|          | 0/23 [00:00<?, ?batch/s]  4%|▍         | 1/23 [00:00<00:09,  2.35batch/s] 22%|██▏       | 5/23 [00:00<00:01, 11.53batch/s] 39%|███▉      | 9/23 [00:00<00:00, 18.36batch/s] 57%|█████▋    | 13/23 [00:00<00:00, 23.61batch/s] 74%|███████▍  | 17/23 [00:00<00:00, 27.57batch/s] 91%|█████████▏| 21/23 [00:00<00:00, 30.19batch/s]                                                    0%|          | 0/23 [00:00<?, ?batch/s]  4%|▍         | 1/23 [00:00<00:07,  2.86batch/s]                                                 [2024-06-08 18:55:37] Epoch 14   training_loss: 0.12  val_loss: 0.15  precision: 0.79  recall: 0.67  f1: 0.70
+  0%|          | 0/23 [00:00<?, ?batch/s]  4%|▍         | 1/23 [00:00<00:06,  3.63batch/s] 22%|██▏       | 5/23 [00:00<00:01, 14.98batch/s] 39%|███▉      | 9/23 [00:00<00:00, 22.25batch/s] 57%|█████▋    | 13/23 [00:00<00:00, 26.86batch/s] 74%|███████▍  | 17/23 [00:00<00:00, 30.01batch/s] 91%|█████████▏| 21/23 [00:00<00:00, 32.32batch/s]                                                    0%|          | 0/23 [00:00<?, ?batch/s]  4%|▍         | 1/23 [00:00<00:07,  3.04batch/s]                                                 [2024-06-08 18:55:38] Epoch 15   training_loss: 0.13  val_loss: 0.17  precision: 0.72  recall: 0.67  f1: 0.67
+  0%|          | 0/23 [00:00<?, ?batch/s]  4%|▍         | 1/23 [00:00<00:07,  2.95batch/s] 22%|██▏       | 5/23 [00:00<00:01, 13.59batch/s] 39%|███▉      | 9/23 [00:00<00:00, 20.86batch/s] 57%|█████▋    | 13/23 [00:00<00:00, 25.82batch/s] 74%|███████▍  | 17/23 [00:00<00:00, 29.34batch/s] 91%|█████████▏| 21/23 [00:00<00:00, 31.79batch/s]                                                    0%|          | 0/23 [00:00<?, ?batch/s]  4%|▍         | 1/23 [00:00<00:08,  2.45batch/s]                                                 [2024-06-08 18:55:40] Epoch 16   training_loss: 0.11  val_loss: 0.20  precision: 0.65  recall: 0.64  f1: 0.62
+  0%|          | 0/23 [00:00<?, ?batch/s]  4%|▍         | 1/23 [00:00<00:06,  3.40batch/s] 22%|██▏       | 5/23 [00:00<00:01, 14.99batch/s] 39%|███▉      | 9/23 [00:00<00:00, 22.33batch/s] 57%|█████▋    | 13/23 [00:00<00:00, 27.18batch/s] 74%|███████▍  | 17/23 [00:00<00:00, 30.11batch/s] 91%|█████████▏| 21/23 [00:00<00:00, 32.35batch/s]                                                    0%|          | 0/23 [00:00<?, ?batch/s]  4%|▍         | 1/23 [00:00<00:06,  3.24batch/s]                                                 [2024-06-08 18:55:41] Epoch 17   training_loss: 0.11  val_loss: 0.26  precision: 0.73  recall: 0.48  f1: 0.55
+  0%|          | 0/23 [00:00<?, ?batch/s]  4%|▍         | 1/23 [00:00<00:09,  2.38batch/s] 22%|██▏       | 5/23 [00:00<00:01, 11.27batch/s] 39%|███▉      | 9/23 [00:00<00:00, 17.84batch/s] 57%|█████▋    | 13/23 [00:00<00:00, 23.16batch/s] 74%|███████▍  | 17/23 [00:00<00:00, 27.11batch/s] 91%|█████████▏| 21/23 [00:00<00:00, 29.87batch/s]                                                    0%|          | 0/23 [00:00<?, ?batch/s]  4%|▍         | 1/23 [00:00<00:07,  3.12batch/s]                                                 /lustre/home/acct-stu/stu282/Tools/miniconda3/envs/py3.10.11/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1509: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+[2024-06-08 18:55:42] Epoch 18   training_loss: 0.10  val_loss: 0.18  precision: 0.67  recall: 0.63  f1: 0.64
+  0%|          | 0/23 [00:00<?, ?batch/s]  4%|▍         | 1/23 [00:00<00:06,  3.53batch/s] 22%|██▏       | 5/23 [00:00<00:01, 15.35batch/s] 39%|███▉      | 9/23 [00:00<00:00, 22.77batch/s] 57%|█████▋    | 13/23 [00:00<00:00, 27.56batch/s] 74%|███████▍  | 17/23 [00:00<00:00, 30.78batch/s] 91%|█████████▏| 21/23 [00:00<00:00, 32.90batch/s]                                                    0%|          | 0/23 [00:00<?, ?batch/s]  4%|▍         | 1/23 [00:00<00:06,  3.17batch/s]                                                 [2024-06-08 18:55:44] Epoch 19   training_loss: 0.09  val_loss: 0.17  precision: 0.79  recall: 0.69  f1: 0.73
+  0%|          | 0/23 [00:00<?, ?batch/s]  4%|▍         | 1/23 [00:00<00:07,  3.03batch/s] 22%|██▏       | 5/23 [00:00<00:01, 13.08batch/s] 39%|███▉      | 9/23 [00:00<00:00, 19.12batch/s] 57%|█████▋    | 13/23 [00:00<00:00, 24.23batch/s] 74%|███████▍  | 17/23 [00:00<00:00, 28.04batch/s] 91%|█████████▏| 21/23 [00:00<00:00, 30.83batch/s]                                                    0%|          | 0/23 [00:00<?, ?batch/s]  4%|▍         | 1/23 [00:00<00:08,  2.54batch/s]                                                 [2024-06-08 18:55:45] Epoch 20   training_loss: 0.08  val_loss: 0.16  precision: 0.79  recall: 0.67  f1: 0.71
+  0%|          | 0/23 [00:00<?, ?batch/s]  4%|▍         | 1/23 [00:00<00:09,  2.41batch/s] 22%|██▏       | 5/23 [00:00<00:01, 11.82batch/s] 39%|███▉      | 9/23 [00:00<00:00, 18.89batch/s] 57%|█████▋    | 13/23 [00:00<00:00, 24.10batch/s] 74%|███████▍  | 17/23 [00:00<00:00, 27.87batch/s] 91%|█████████▏| 21/23 [00:00<00:00, 30.63batch/s]                                                    0%|          | 0/23 [00:00<?, ?batch/s]  4%|▍         | 1/23 [00:00<00:07,  2.98batch/s]                                                 [2024-06-08 18:55:47] Epoch 21   training_loss: 0.08  val_loss: 0.15  precision: 0.80  recall: 0.71  f1: 0.74
+  0%|          | 0/880 [00:00<?, ?file/s]  0%|          | 1/880 [00:00<04:03,  3.61file/s]  1%|          | 8/880 [00:00<00:34, 25.58file/s]  2%|▎         | 22/880 [00:00<00:14, 60.90file/s]  4%|▍         | 36/880 [00:00<00:10, 77.53file/s]  6%|▌         | 54/880 [00:00<00:08, 102.42file/s]  8%|▊         | 70/880 [00:00<00:06, 116.87file/s] 10%|█         | 92/880 [00:00<00:05, 138.29file/s] 13%|█▎        | 115/880 [00:01<00:04, 159.93file/s] 15%|█▌        | 133/880 [00:01<00:04, 164.15file/s] 17%|█▋        | 152/880 [00:01<00:04, 170.66file/s] 19%|█▉        | 170/880 [00:01<00:04, 157.57file/s] 22%|██▏       | 195/880 [00:01<00:03, 182.37file/s] 24%|██▍       | 214/880 [00:01<00:03, 176.74file/s] 27%|██▋       | 238/880 [00:01<00:03, 193.14file/s] 30%|███       | 264/880 [00:01<00:03, 203.26file/s] 33%|███▎      | 293/880 [00:01<00:02, 227.22file/s] 37%|███▋      | 323/880 [00:02<00:02, 241.34file/s] 40%|███▉      | 348/880 [00:02<00:02, 241.53file/s] 42%|████▏     | 373/880 [00:02<00:02, 220.26file/s] 46%|████▌     | 401/880 [00:02<00:02, 236.08file/s] 49%|████▊     | 428/880 [00:02<00:01, 245.18file/s] 52%|█████▏    | 456/880 [00:02<00:01, 254.43file/s] 56%|█████▌    | 489/880 [00:02<00:01, 275.08file/s] 59%|█████▉    | 517/880 [00:02<00:01, 270.64file/s] 62%|██████▎   | 550/880 [00:02<00:01, 285.47file/s] 66%|██████▌   | 579/880 [00:03<00:01, 286.10file/s] 69%|██████▉   | 608/880 [00:03<00:00, 285.06file/s] 72%|███████▏  | 637/880 [00:03<00:00, 257.04file/s] 75%|███████▌  | 664/880 [00:03<00:00, 260.56file/s] 79%|███████▉  | 694/880 [00:03<00:00, 269.82file/s] 82%|████████▏ | 724/880 [00:03<00:00, 252.93file/s] 86%|████████▌ | 755/880 [00:03<00:00, 266.18file/s] 89%|████████▉ | 783/880 [00:03<00:00, 268.84file/s] 92%|█████████▏| 811/880 [00:03<00:00, 224.95file/s] 96%|█████████▌| 841/880 [00:04<00:00, 242.96file/s] 99%|█████████▉| 872/880 [00:04<00:00, 259.29file/s]                                                    

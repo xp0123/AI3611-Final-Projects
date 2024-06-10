@@ -1,0 +1,50 @@
+[2024-06-08 18:53:56] Storing files in experiments/aug_timeshift/Crnn/2024-06-08_18-53-06_67803934258511ef9ff65cff35c1d408
+[2024-06-08 18:53:56] aug_method:
+[2024-06-08 18:53:56] - time_shift
+[2024-06-08 18:53:56] batch_size: 64
+[2024-06-08 18:53:56] data:
+[2024-06-08 18:53:56]   class_indice_file: data/metadata/class_label_indices.txt
+[2024-06-08 18:53:56]   feature: data/dev/feature.csv
+[2024-06-08 18:53:56]   label: data/dev/label.csv
+[2024-06-08 18:53:56]   stratified: true
+[2024-06-08 18:53:56] dataloader_args:
+[2024-06-08 18:53:56]   batch_size: 64
+[2024-06-08 18:53:56]   num_workers: 1
+[2024-06-08 18:53:56] early_stop: 7
+[2024-06-08 18:53:56] epochs: 100
+[2024-06-08 18:53:56] eval_data:
+[2024-06-08 18:53:56]   feature: data/eval/feature.csv
+[2024-06-08 18:53:56]   label: data/eval/label.csv
+[2024-06-08 18:53:56] loss: BceLoss
+[2024-06-08 18:53:56] model:
+[2024-06-08 18:53:56]   args: {}
+[2024-06-08 18:53:56]   type: Crnn
+[2024-06-08 18:53:56] num_workers: 2
+[2024-06-08 18:53:56] optimizer:
+[2024-06-08 18:53:56]   args:
+[2024-06-08 18:53:56]     lr: 0.001
+[2024-06-08 18:53:56]   type: AdamW
+[2024-06-08 18:53:56] outputpath: experiments/aug_timeshift
+[2024-06-08 18:53:56] scheduler_args:
+[2024-06-08 18:53:56]   factor: 0.1
+[2024-06-08 18:53:56]   patience: 3
+[2024-06-08 18:53:56] 
+[2024-06-08 18:53:56] Running on device cuda
+[2024-06-08 18:53:56] Transforms:
+[2024-06-08 18:53:56] Sequential(
+[2024-06-08 18:53:56]   (0): time_shift()
+[2024-06-08 18:53:56] )
+Traceback (most recent call last):
+  File "/lustre/home/acct-stu/stu312/fy/Project/sound_event_detection/run.py", line 338, in <module>
+    fire.Fire(Runner)
+  File "/lustre/home/acct-stu/stu282/Tools/miniconda3/envs/py3.10.11/lib/python3.10/site-packages/fire/core.py", line 143, in Fire
+    component_trace = _Fire(component, args, parsed_flag_args, context, name)
+  File "/lustre/home/acct-stu/stu282/Tools/miniconda3/envs/py3.10.11/lib/python3.10/site-packages/fire/core.py", line 477, in _Fire
+    component, remaining_args = _CallAndUpdateTrace(
+  File "/lustre/home/acct-stu/stu282/Tools/miniconda3/envs/py3.10.11/lib/python3.10/site-packages/fire/core.py", line 693, in _CallAndUpdateTrace
+    component = fn(*varargs, **kwargs)
+  File "/lustre/home/acct-stu/stu312/fy/Project/sound_event_detection/run.py", line 333, in train_evaluate
+    experiment_path = self.train(config_file)
+  File "/lustre/home/acct-stu/stu312/fy/Project/sound_event_detection/run.py", line 105, in train
+    dataset.TrainDataset(
+TypeError: TrainDataset.__init__() missing 1 required positional argument: 'transform'

@@ -1,0 +1,23 @@
+no change     /lustre/home/acct-stu/stu282/Tools/miniconda3/condabin/conda
+no change     /lustre/home/acct-stu/stu282/Tools/miniconda3/bin/conda
+no change     /lustre/home/acct-stu/stu282/Tools/miniconda3/bin/conda-env
+no change     /lustre/home/acct-stu/stu282/Tools/miniconda3/bin/activate
+no change     /lustre/home/acct-stu/stu282/Tools/miniconda3/bin/deactivate
+no change     /lustre/home/acct-stu/stu282/Tools/miniconda3/etc/profile.d/conda.sh
+no change     /lustre/home/acct-stu/stu282/Tools/miniconda3/etc/fish/conf.d/conda.fish
+no change     /lustre/home/acct-stu/stu282/Tools/miniconda3/shell/condabin/Conda.psm1
+no change     /lustre/home/acct-stu/stu282/Tools/miniconda3/shell/condabin/conda-hook.ps1
+no change     /lustre/home/acct-stu/stu282/Tools/miniconda3/lib/python3.12/site-packages/xontrib/conda.xsh
+no change     /lustre/home/acct-stu/stu282/Tools/miniconda3/etc/profile.d/conda.csh
+no change     /lustre/home/acct-stu/stu312/.bashrc
+No action taken.
+??
+??
+x.shape torch.Size([64, 501, 64])
+x_batch_norm.shape torch.Size([64, 1, 64, 501])
+f1.shape torch.Size([64, 16, 32, 250])
+f2.shape torch.Size([64, 32, 16, 125])
+f3.shape torch.Size([64, 64, 8, 62])
+f4.shape torch.Size([64, 128, 4, 31])
+f5.shape torch.Size([64, 128, 2, 15])
+f2.shape torch.Size([64, 32, 16, 125])
