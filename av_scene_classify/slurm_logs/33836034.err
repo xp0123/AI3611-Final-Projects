@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "/lustre/home/acct-stu/stu312/fy/Project/av_scene_classify/train_modi.py", line 61, in <module>
+    model = models.MeanConcatDense(512, 512, config["num_classes"])
+NameError: name 'models' is not defined
+Traceback (most recent call last):
+  File "/lustre/home/acct-stu/stu312/fy/Project/av_scene_classify/evaluate_modi.py", line 44, in <module>
+    model = models.MeanConcatDense(512, 512, config["num_classes"])
+NameError: name 'models' is not defined

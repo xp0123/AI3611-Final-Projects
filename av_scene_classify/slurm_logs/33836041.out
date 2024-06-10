@@ -1,0 +1,103 @@
+no change     /lustre/home/acct-stu/stu282/Tools/miniconda3/condabin/conda
+no change     /lustre/home/acct-stu/stu282/Tools/miniconda3/bin/conda
+no change     /lustre/home/acct-stu/stu282/Tools/miniconda3/bin/conda-env
+no change     /lustre/home/acct-stu/stu282/Tools/miniconda3/bin/activate
+no change     /lustre/home/acct-stu/stu282/Tools/miniconda3/bin/deactivate
+no change     /lustre/home/acct-stu/stu282/Tools/miniconda3/etc/profile.d/conda.sh
+no change     /lustre/home/acct-stu/stu282/Tools/miniconda3/etc/fish/conf.d/conda.fish
+no change     /lustre/home/acct-stu/stu282/Tools/miniconda3/shell/condabin/Conda.psm1
+no change     /lustre/home/acct-stu/stu282/Tools/miniconda3/shell/condabin/conda-hook.ps1
+no change     /lustre/home/acct-stu/stu282/Tools/miniconda3/lib/python3.12/site-packages/xontrib/conda.xsh
+no change     /lustre/home/acct-stu/stu282/Tools/miniconda3/etc/profile.d/conda.csh
+no change     /lustre/home/acct-stu/stu312/.bashrc
+No action taken.
+Finish loading indexes
+Finish loading indexes
+MeanConcatDense(
+  (audio_embed): Sequential(
+    (0): Linear(in_features=512, out_features=512, bias=True)
+    (1): BatchNorm1d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (2): ReLU()
+    (3): Dropout(p=0.2, inplace=False)
+    (4): Linear(in_features=512, out_features=128, bias=True)
+  )
+  (video_embed): Sequential(
+    (0): Linear(in_features=512, out_features=512, bias=True)
+    (1): BatchNorm1d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (2): ReLU()
+    (3): Dropout(p=0.2, inplace=False)
+    (4): Linear(in_features=512, out_features=128, bias=True)
+  )
+  (embed): Sequential(
+    (0): Linear(in_features=1024, out_features=512, bias=True)
+    (1): BatchNorm1d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (2): ReLU()
+    (3): Dropout(p=0.2, inplace=False)
+    (4): Linear(in_features=512, out_features=256, bias=True)
+  )
+  (outputlayer): Sequential(
+    (0): Linear(in_features=256, out_features=128, bias=True)
+    (1): Linear(in_features=128, out_features=10, bias=True)
+  )
+  (audio_output): Sequential(
+    (0): Linear(in_features=128, out_features=128, bias=True)
+    (1): Linear(in_features=128, out_features=10, bias=True)
+  )
+  (video_output): Sequential(
+    (0): Linear(in_features=128, out_features=128, bias=True)
+    (1): Linear(in_features=128, out_features=10, bias=True)
+  )
+)
+-----------start training-----------
+epoch 1
+---------------------------------------------------------------------------------------------------
+epoch 1 training loss:  1.681801595995503 cv loss:  1.2588230470816295
+best validation model found and saved.
+---------------------------------------------------------------------------------------------------
+epoch 2
+---------------------------------------------------------------------------------------------------
+epoch 2 training loss:  0.9655783484058995 cv loss:  0.8691966633001963
+best validation model found and saved.
+---------------------------------------------------------------------------------------------------
+epoch 3
+---------------------------------------------------------------------------------------------------
+epoch 3 training loss:  0.5740998454632298 cv loss:  0.6165555814901987
+best validation model found and saved.
+---------------------------------------------------------------------------------------------------
+epoch 4
+---------------------------------------------------------------------------------------------------
+epoch 4 training loss:  0.35308948928310024 cv loss:  0.5183187474807104
+best validation model found and saved.
+---------------------------------------------------------------------------------------------------
+epoch 5
+---------------------------------------------------------------------------------------------------
+epoch 5 training loss:  0.22721211323815008 cv loss:  0.4996754974126816
+best validation model found and saved.
+---------------------------------------------------------------------------------------------------
+epoch 6
+---------------------------------------------------------------------------------------------------
+epoch 6 training loss:  0.15513418939325116 cv loss:  0.4680021752913793
+best validation model found and saved.
+---------------------------------------------------------------------------------------------------
+epoch 7
+---------------------------------------------------------------------------------------------------
+epoch 7 training loss:  0.1078197512655489 cv loss:  0.5242256360749403
+epoch 8
+---------------------------------------------------------------------------------------------------
+epoch 8 training loss:  0.07184720976698783 cv loss:  0.5417632882793745
+epoch 9
+---------------------------------------------------------------------------------------------------
+epoch 9 training loss:  0.050960039990323204 cv loss:  0.5380664852758249
+epoch 10
+---------------------------------------------------------------------------------------------------
+epoch 10 training loss:  0.041014725612776894 cv loss:  0.5834278066953024
+epoch 11
+---------------------------------------------------------------------------------------------------
+epoch 11 training loss:  0.032708725306175405 cv loss:  0.5850557299951712
+epoch 12
+---------------------------------------------------------------------------------------------------
+epoch 12 training loss:  0.03013079440701873 cv loss:  0.5813341935475668
+epoch 13
+---------------------------------------------------------------------------------------------------
+epoch 13 training loss:  0.029432088932803562 cv loss:  0.6078243814408779
+Finish loading indexes

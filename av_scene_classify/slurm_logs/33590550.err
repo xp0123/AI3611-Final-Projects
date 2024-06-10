@@ -1,0 +1,10 @@
+Traceback (most recent call last):
+  File "/lustre/home/acct-stu/stu312/fy/Project/av_scene_classify/train.py", line 39, in <module>
+    mean_std_audio = np.load(config["data"]["audio_norm"])
+  File "/lustre/home/acct-stu/stu282/Tools/miniconda3/envs/py3.10.11/lib/python3.10/site-packages/numpy/lib/npyio.py", line 427, in load
+    fid = stack.enter_context(open(os_fspath(file), "rb"))
+FileNotFoundError: [Errno 2] No such file or directory: 'data/feature/audio_features_data/global_mean_std.npz'
+Traceback (most recent call last):
+  File "/lustre/home/acct-stu/stu312/fy/Project/av_scene_classify/evaluate.py", line 23, in <module>
+    with open(os.path.join(args.experiment_path, "config.yaml"), "r") as reader:
+FileNotFoundError: [Errno 2] No such file or directory: 'experiments/baseline/config.yaml'

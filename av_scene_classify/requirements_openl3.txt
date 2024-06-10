@@ -1,0 +1,10 @@
+pandas
+numpy
+h5py
+openl3==0.4.1
+scikit-learn
+librosa==0.8.1
+moviepy
+soundfile
+tqdm
+torch

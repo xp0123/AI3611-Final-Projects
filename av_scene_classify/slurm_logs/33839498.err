@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "/lustre/home/acct-stu/stu312/fy/Project/av_scene_classify/train.py", line 61, in <module>
+    model = models.MeanConcatDense(512, 512, config["num_classes"])
+NameError: name 'models' is not defined
+Traceback (most recent call last):
+  File "/lustre/home/acct-stu/stu312/fy/Project/av_scene_classify/evaluate.py", line 23, in <module>
+    with open(os.path.join(args.experiment_path, "config.yaml"), "r") as reader:
+FileNotFoundError: [Errno 2] No such file or directory: 'experiments/audio/config.yaml'
